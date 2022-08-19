@@ -70,6 +70,7 @@
 .wrapper .foodtype {
     width: 100%;
     height: 48vw;
+    padding-left: 0vw;
 
     display: flex;
     flex-wrap: wrap;
@@ -87,7 +88,7 @@
     /*弹性盒子主轴方向设为column，然后仍然是垂直水平方向居中*/
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 
     user-select: none;
     cursor: pointer;
@@ -97,11 +98,13 @@
     width: 12vw;
     /*视频讲解时高度设置为12vw，实际上设置为10.3vw更佳*/
     height: 10.3vw;
+    margin: auto;
 }
 
 .wrapper .foodtype li p {
     font-size: 3.2vw;
     color: #666;
+    margin: auto;
 }
 
 /****************** 横幅广告部分 ******************/
@@ -209,6 +212,7 @@
     width: 100%;
     height: 5vw;
     margin-bottom: 5vw;
+    padding-left: 0vw;
 
     display: flex;
     justify-content: space-around;
@@ -224,6 +228,7 @@
 .wrapper .business {
     width: 100%;
     margin-bottom: 14vw;
+    padding-left: 0vw;
 }
 
 .wrapper .business li {
@@ -375,6 +380,8 @@
     height: 14vw;
     border-top: solid 1px #DDD;
     background-color: #fff;
+    padding-left: 0vw;
+    margin-bottom: 0vw;
 
     position: fixed;
     left: 0;
@@ -402,5 +409,6 @@
 }
 
 .wrapper .footer li i {
+    margin-top: 3vw;
     font-size: 5vw;
 }
