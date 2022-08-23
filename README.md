@@ -1,2 +1,2 @@
 # Comprehensive-Practice-of-Software-Engineering
-前端项目部分
+软件工程综合实践
