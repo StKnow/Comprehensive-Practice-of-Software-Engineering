@@ -380,6 +380,26 @@ export default {
   display: flex;
   align-items: center;
 }
+.icon-location {
+  position: relative;
+  width: 100%;
+  /*先画一个正方形*/
+  height: 100%;
+  border-radius: 50% 50% 50% 0;
+  /*然后将三个角变成圆角*/
+  background: #fff;
+  transform: rotate(-45deg);
+  /*最后，旋转45度*/
+}
+.icon-location:after {
+  content: "";
+  width: 40%;
+  height: 40%;
+  margin: 30% 0 0 29%;
+  background-color: #0097ff;
+  position: absolute;
+  border-radius: 50%;
+}
 .wrapper header .icon-location-box {
   width: 3.5vw;
   height: 3.5vw;
