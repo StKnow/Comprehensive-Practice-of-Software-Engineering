@@ -42,8 +42,8 @@ public class DispatcherServlet extends HttpServlet {
             Object result = method.invoke(controller, new Object[]{request});
             //获取向客户端响应的输出流
             out = response.getWriter();
-            ObjectMapper om = new ObjectMapper();
             //向客户端响应json数据
+            ObjectMapper om = new ObjectMapper();
             out.print(om.writeValueAsString(result));
         } catch (Exception e) {
             e.printStackTrace();
