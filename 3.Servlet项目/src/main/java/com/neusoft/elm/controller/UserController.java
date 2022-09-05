@@ -12,7 +12,7 @@ public class UserController {
         System.out.println(userName);
         User user = new User();
         user.setUserId("123456");
-        user.setUserName("zhangsan");
+        user.setUserName("jack");
         return user;
     }
 }
