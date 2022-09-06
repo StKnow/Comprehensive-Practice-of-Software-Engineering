@@ -9,29 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0828375-4b1a-49de-b386-ea2d48dd2902" name="变更" comment="Servlet seventh commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/controller/BusinessController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/BusinessService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/impl/BusinessServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/elm03_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/elm03_war_exploded.xml" afterDir="false" />
+    <list default="true" id="c0828375-4b1a-49de-b386-ea2d48dd2902" name="变更" comment="Servlet eighth commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elm03.iml" beforeDir="false" afterPath="$PROJECT_DIR$/elm03.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/controller/CartController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/controller/FoodController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/imp/BusinessDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/BusinessDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neusoft/elm/controller/CartController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neusoft/elm/controller/FoodController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neusoft/elm/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neusoft/elm/po/Food.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/po/Food.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neusoft/elm/po/OrderDetailet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/po/OrderDetailet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/controller/CartController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/controller/FoodController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/po/Food.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/po/Food.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/po/OrderDetailet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/po/OrderDetailet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/po/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +26,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -181,7 +167,8 @@
       <workItem from="1662377262091" duration="4000" />
       <workItem from="1662377302688" duration="5000" />
       <workItem from="1662377354532" duration="9000" />
-      <workItem from="1662388352404" duration="10894000" />
+      <workItem from="1662388352404" duration="12239000" />
+      <workItem from="1662468278356" duration="2686000" />
     </task>
     <task id="LOCAL-00001" summary="Servlet seventh commit">
       <created>1662393337262</created>
@@ -190,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662393337262</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Servlet eighth commit">
+      <created>1662454654479</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662454654479</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +216,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Servlet seventh commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Servlet seventh commit" />
+    <MESSAGE value="Servlet eighth commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Servlet eighth commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

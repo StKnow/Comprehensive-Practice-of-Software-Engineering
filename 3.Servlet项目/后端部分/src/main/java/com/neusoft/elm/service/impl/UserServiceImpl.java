@@ -1,0 +1,27 @@
+package com.neusoft.elm.service.impl;
+
+import com.neusoft.elm.dao.BusinessDao;
+import com.neusoft.elm.dao.UserDao;
+import com.neusoft.elm.dao.impl.BusinessDaoImpl;
+import com.neusoft.elm.dao.impl.UserDaoImpl;
+import com.neusoft.elm.po.Business;
+import com.neusoft.elm.po.User;
+import com.neusoft.elm.service.UserService;
+import com.neusoft.elm.util.DBUtil;
+
+public class UserServiceImpl implements UserService {
+    @Override
+    public User getUserByPass(String userId, String password) {
+        User user = new User();
+        UserDao dao = new UserDaoImpl();
+        try {
+            DBUtil.getConnection();
+            user = dao.getUserByPass(userId, password);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            DBUtil.close();
+        }
+        return user;
+    }
+}
