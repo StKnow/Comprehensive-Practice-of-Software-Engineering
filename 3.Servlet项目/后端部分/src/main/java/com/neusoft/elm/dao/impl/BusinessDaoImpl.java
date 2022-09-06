@@ -1,4 +1,4 @@
-package com.neusoft.elm.dao.imp;
+package com.neusoft.elm.dao.impl;
 
 import com.neusoft.elm.dao.BusinessDao;
 import com.neusoft.elm.po.Business;
@@ -10,7 +10,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BusinessDaoImp implements BusinessDao {
+public class BusinessDaoImpl implements BusinessDao {
     private Connection con = null;
     private PreparedStatement pst = null;
     private ResultSet rs = null;
@@ -18,7 +18,7 @@ public class BusinessDaoImp implements BusinessDao {
     @Override
     public List<Business> listBusinessByOrderTypeId(Integer orderTypeId) throws Exception {
         List<Business> list = new ArrayList<>();
-        String sql = "select * from business where orderTypeId=? ordered by businessId";
+        String sql = "select * from business where orderTypeId=? order by businessId";
         try {
             con = DBUtil.getConnection();
             pst = con.prepareStatement(sql);
