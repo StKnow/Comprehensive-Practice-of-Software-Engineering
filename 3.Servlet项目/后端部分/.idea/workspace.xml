@@ -9,7 +9,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41abe800-1979-451c-86c1-8829b6fbed78" name="Changes" comment="servlet second session" />
+    <list default="true" id="c0828375-4b1a-49de-b386-ea2d48dd2902" name="变更" comment="Servlet ninth commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/controller/OrdersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/OrderDetailetDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/OrdersDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/OrderDetailetDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/OrdersDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/OrdersService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/impl/OrdersServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/util/CommonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/controller/DeliveryAddressController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/dao/DeliveryAddressDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/dao/impl/DeliveryAddressDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/dao/impl/UserDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/service/DeliveryAddressService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/service/impl/DeliveryAddressServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/controller/DeliveryAddressController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/dao/DeliveryAddressDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/dao/impl/DeliveryAddressDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/dao/impl/UserDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/service/DeliveryAddressService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/service/impl/DeliveryAddressServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/CartDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/CartDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neusoft/elm/po/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/po/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/po/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/po/User.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -207,6 +239,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Servlet seventh commit" />
