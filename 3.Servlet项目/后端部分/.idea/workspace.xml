@@ -9,15 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0828375-4b1a-49de-b386-ea2d48dd2902" name="变更" comment="Servlet eighth commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/po/User.java" afterDir="false" />
-    </list>
+    <list default="true" id="41abe800-1979-451c-86c1-8829b6fbed78" name="Changes" comment="servlet second session" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +33,9 @@
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2ELYIHml9KwlW58tW5bbgyxkudX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -212,7 +207,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Servlet seventh commit" />
