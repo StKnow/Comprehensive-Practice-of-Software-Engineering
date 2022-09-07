@@ -1,18 +1,17 @@
 package com.neusoft.elm.controller;
 
 import com.neusoft.elm.po.User;
+import com.neusoft.elm.service.UserService;
+import com.neusoft.elm.service.impl.UserServiceImpl;
 
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 public class UserController {
-    public Object login(HttpServletRequest request) {
-        String userName = request.getParameter("username");
-        System.out.println(userName);
-        User user = new User();
-        user.setUserId("123456");
-        user.setUserName("jack");
+    public Object getUserByPass(HttpServletRequest request) throws Exception {
+        String userId = request.getParameter("userId");
+        String password = request.getParameter("password");
+        UserService service = new UserServiceImpl();
+        User user = service.getUserByPass(userId, password);
         return user;
     }
 }

@@ -4,9 +4,9 @@ public class User {
     private String userId;
     private String password;
     private String userName;
-    private String userSex;
+    private Integer userSex;
     private String userImg;
-    private String delTag;
+    private Integer delTag;
 
     public String getUserId() {
         return userId;
@@ -32,11 +32,11 @@ public class User {
         this.userName = userName;
     }
 
-    public String getUserSex() {
+    public Integer getUserSex() {
         return userSex;
     }
 
-    public void setUserSex(String userSex) {
+    public void setUserSex(Integer userSex) {
         this.userSex = userSex;
     }
 
@@ -48,11 +48,11 @@ public class User {
         this.userImg = userImg;
     }
 
-    public String getDelTag() {
+    public Integer getDelTag() {
         return delTag;
     }
 
-    public void setDelTag(String delTag) {
+    public void setDelTag(Integer delTag) {
         this.delTag = delTag;
     }
 }
