@@ -32,7 +32,6 @@ public class CartDaoImpl implements CartDao {
             DBUtil.close(pst);
         }
         return result;
-
     }
 
     public int updateCart(Cart cart) throws Exception{
