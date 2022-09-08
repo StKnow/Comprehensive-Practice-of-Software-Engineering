@@ -38,4 +38,39 @@ public class UserDaoImpl implements UserDao {
         }
         return user;
     }
+    @Override
+    public int getUserById(String userId) throws Exception{
+        int result = 0;
+        String sql = "select count(*) from user where userId=?";
+        try {
+            con = DBUtil.getConnection();
+            pst = con.prepareStatement(sql);
+            pst.setString(1, userId);
+            rs = pst.executeQuery();
+            if(rs.next()) {
+                result = rs.getInt(1);
+            }
+        } finally {
+            DBUtil.close(rs,pst);
+        }
+        return result;
+    }
+    @Override
+    public int saveUser(User user) throws Exception{
+        int result = 0;
+        String sql = "insert into user values(?,?,?,?,?,1)";
+        try {
+            con = DBUtil.getConnection();
+            pst = con.prepareStatement(sql);
+            pst.setString(1, user.getUserId());
+            pst.setString(2, user.getPassword());
+            pst.setString(3, user.getUserName());
+            pst.setInt(4, user.getUserSex());
+            pst.setString(5, user.getUserImg());
+            result = pst.executeUpdate();
+        } finally {
+            DBUtil.close(rs,pst);
+        }
+        return result;
+    }
 }

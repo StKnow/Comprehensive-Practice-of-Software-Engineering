@@ -6,6 +6,7 @@ import com.neusoft.elm.service.impl.OrdersServiceImpl;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.xml.ws.EndpointReference;
+import java.util.List;
 
 public class OrdersController {
     public Object createOrders(HttpServletRequest request) throws Exception {
@@ -23,5 +24,12 @@ public class OrdersController {
         OrdersService service = new OrdersServiceImpl();
         Orders orders = service.getOrdersById(orderId);
         return orders;
+    }
+
+    public Object listOrdersByUserId(HttpServletRequest request) throws Exception{
+        String userId = request.getParameter("userId");
+        OrdersService service = new OrdersServiceImpl();
+        List<Orders> list = service.listOrdersByUserId(userId);
+        return list;
     }
 }

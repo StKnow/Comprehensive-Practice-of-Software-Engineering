@@ -92,4 +92,31 @@ public class OrdersServiceImpl implements OrdersService {
         }
         return orders;
     }
+    @Override
+    public List<Orders> listOrdersByUserId(String userId){
+        List<Orders> list = new ArrayList<>();
+
+        OrdersDao ordersDao = new OrdersDaoImpl();
+        OrderDetailetDao orderDetailetDao = new OrderDetailetDaoImpl();
+
+        try {
+            DBUtil.getConnection();
+
+            //1.根据用户id查询订单信息(多对一，商家)
+            list = ordersDao.listOrdersByUserId(userId);
+
+            //2.查询多个订单的明细信息
+            for(Orders o : list)
+            {
+                List<OrderDetailet> odList = orderDetailetDao.listOrderDetailetByOrderId(o.getOrderId());
+                o.setList(odList);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            DBUtil.close();
+        }
+        return list;
+    }
 }

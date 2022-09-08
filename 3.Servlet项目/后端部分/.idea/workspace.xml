@@ -11,12 +11,21 @@
   <component name="ChangeListManager">
     <list default="true" id="c0828375-4b1a-49de-b386-ea2d48dd2902" name="变更" comment="Servlet tenth commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/OrderDetailetDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/OrderDetailetDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/controller/DeliveryAddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/controller/DeliveryAddressController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/controller/OrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/controller/OrdersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/DeliveryAddressDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/DeliveryAddressDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/OrdersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/OrdersDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/OrderDetailetDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/OrderDetailetDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/DeliveryAddressDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/DeliveryAddressDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/OrdersDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/OrdersDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/DeliveryAddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/DeliveryAddressService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/OrdersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/OrdersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/impl/DeliveryAddressServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/impl/DeliveryAddressServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/impl/OrdersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/impl/OrdersServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +229,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -231,7 +240,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Servlet seventh commit" />
