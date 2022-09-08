@@ -9,24 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0828375-4b1a-49de-b386-ea2d48dd2902" name="变更" comment="Servlet tenth commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/controller/DeliveryAddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/controller/DeliveryAddressController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/controller/OrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/controller/OrdersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/DeliveryAddressDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/DeliveryAddressDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/OrdersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/OrdersDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/DeliveryAddressDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/DeliveryAddressDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/OrdersDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/OrdersDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/DeliveryAddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/DeliveryAddressService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/OrdersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/OrdersService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/impl/DeliveryAddressServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/impl/DeliveryAddressServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/impl/OrdersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/impl/OrdersServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/impl/UserServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="c0828375-4b1a-49de-b386-ea2d48dd2902" name="变更" comment="Servlet第四部分完成" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -212,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662561898911</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Servlet第四部分完成">
+      <created>1662623613049</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662623613049</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +219,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>
@@ -245,7 +235,8 @@
     <MESSAGE value="Servlet seventh commit" />
     <MESSAGE value="Servlet eighth commit" />
     <MESSAGE value="Servlet tenth commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Servlet tenth commit" />
+    <MESSAGE value="Servlet第四部分完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="Servlet第四部分完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
