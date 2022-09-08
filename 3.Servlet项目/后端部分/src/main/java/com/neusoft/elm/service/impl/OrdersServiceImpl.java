@@ -68,4 +68,28 @@ public class OrdersServiceImpl implements OrdersService {
         }
         return 0;
     }
+
+    @Override
+    public Orders getOrdersById(Integer orderId) {
+        Orders orders = null;
+        OrdersDao ordersDao = new OrdersDaoImpl();
+        OrderDetailetDao orderDetailetDao = new OrderDetailetDaoImpl();
+
+        try {
+           DBUtil.getConnection();
+
+           //1.根据订单id查询订单信息(多对一，商家)
+            orders = ordersDao.getOrdersById(orderId);
+
+           //2.根据订单id查询订单明细信息
+            List<OrderDetailet> list = orderDetailetDao.listOrderDetailetByOrderId(orderId);
+            orders.setList(list);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            DBUtil.close();
+        }
+        return orders;
+    }
 }

@@ -1,6 +1,7 @@
 package com.neusoft.elm.dao.impl;
 
 import com.neusoft.elm.dao.OrdersDao;
+import com.neusoft.elm.po.Business;
 import com.neusoft.elm.po.Orders;
 import com.neusoft.elm.util.CommonUtil;
 import com.neusoft.elm.util.DBUtil;
@@ -32,8 +33,45 @@ public class OrdersDaoImpl implements OrdersDao {
                 orderId = rs.getInt(1);
             }
         } finally {
-            DBUtil.close(pst);
+            DBUtil.close(rs,pst);
         }
         return orderId;
+    }
+
+    @Override
+    public Orders getOrdersById(Integer orderId) throws Exception {
+        Orders orders = null;
+        StringBuffer sql = new StringBuffer();
+        sql.append(" select o.*, ");
+        sql.append(" b.businessId bbusinessId, ");
+        sql.append(" b.businessName bbusinessName, ");
+        sql.append(" b.deliveryPrice bdeliveryPrice ");
+        sql.append(" from orders o left join business b on o.businessId=b.businessId ");
+        sql.append(" where o.orderId=? ");
+        try {
+            con = DBUtil.getConnection();
+            pst = con.prepareStatement(sql.toString());
+            pst.setInt(1,orderId);
+            rs = pst.executeQuery();
+            while(rs.next()) {
+                orders = new Orders();
+                orders.setOrderId(rs.getInt("orderId"));
+                orders.setUserId(rs.getString("userId"));
+                orders.setBusinessId(rs.getInt("businessId"));
+                orders.setOrderDate(rs.getString("orderDate"));
+                orders.setOrderTotal(rs.getDouble("orderTotal"));
+                orders.setDaId(rs.getInt("daId"));
+                orders.setOrderState(rs.getInt("orderState"));
+
+                Business business = new Business();
+                business.setBusinessId(rs.getInt("bbusinessId"));
+                business.setBusinessName(rs.getString("bbusinessName"));
+                business.setDeliveryPrice(rs.getDouble("bdeliveryPrice"));
+                orders.setBusiness(business);
+            }
+        } finally {
+            DBUtil.close(rs,pst);
+        }
+        return orders;
     }
 }

@@ -9,38 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0828375-4b1a-49de-b386-ea2d48dd2902" name="变更" comment="Servlet ninth commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/controller/OrdersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/OrderDetailetDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/OrdersDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/OrderDetailetDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/OrdersDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/OrdersService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/impl/OrdersServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/util/CommonUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/controller/DeliveryAddressController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/dao/DeliveryAddressDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/dao/UserDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/dao/impl/DeliveryAddressDaoImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/dao/impl/UserDaoImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/service/DeliveryAddressService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/service/impl/DeliveryAddressServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/controller/DeliveryAddressController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/dao/DeliveryAddressDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/dao/UserDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/dao/impl/DeliveryAddressDaoImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/dao/impl/UserDaoImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/service/DeliveryAddressService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/service/impl/DeliveryAddressServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/service/impl/UserServiceImpl.class" afterDir="false" />
+    <list default="true" id="c0828375-4b1a-49de-b386-ea2d48dd2902" name="变更" comment="Servlet tenth commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/CartDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/CartDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neusoft/elm/po/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/po/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/po/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/po/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/OrderDetailetDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/OrderDetailetDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/OrdersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/OrdersDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/OrderDetailetDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/OrderDetailetDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/OrdersDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/dao/impl/OrdersDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/OrdersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/OrdersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/impl/OrdersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/service/impl/OrdersServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +34,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
     <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -196,6 +180,7 @@
       <workItem from="1662377354532" duration="9000" />
       <workItem from="1662388352404" duration="12239000" />
       <workItem from="1662468278356" duration="2686000" />
+      <workItem from="1662605205303" duration="7274000" />
     </task>
     <task id="LOCAL-00001" summary="Servlet seventh commit">
       <created>1662393337262</created>
@@ -211,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662454654479</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Servlet tenth commit">
+      <created>1662561898911</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662561898911</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +236,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Servlet seventh commit" />
     <MESSAGE value="Servlet eighth commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Servlet eighth commit" />
+    <MESSAGE value="Servlet tenth commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Servlet tenth commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
