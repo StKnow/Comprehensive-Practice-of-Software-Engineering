@@ -6,7 +6,6 @@
         <exploded>true</exploded>
         <module>elm03</module>
         <packaging>war</packaging>
-        <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
     <root id="root">
@@ -18,8 +17,8 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.12.0-rc1" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.12.0-rc1" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.12.0-rc1" />
-          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.28" />
-          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.11.4" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.30" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.19.4" />
         </element>
       </element>
       <element id="directory" name="META-INF">
