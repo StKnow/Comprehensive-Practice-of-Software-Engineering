@@ -7,7 +7,7 @@ import com.neusoft.elm.service.impl.UserServiceImpl;
 import javax.servlet.http.HttpServletRequest;
 
 public class UserController {
-    public Object getUserByPass(HttpServletRequest request) throws Exception {
+    public Object getUserByIdByPass(HttpServletRequest request) throws Exception {
         String userId = request.getParameter("userId");
         String password = request.getParameter("password");
         UserService service = new UserServiceImpl();
