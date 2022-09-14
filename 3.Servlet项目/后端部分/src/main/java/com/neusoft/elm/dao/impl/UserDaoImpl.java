@@ -15,7 +15,7 @@ public class UserDaoImpl implements UserDao {
     private ResultSet rs = null;
 
     @Override
-    public User getUserByPass(String userId, String password) throws Exception{
+    public User  getUserByIdByPass(String userId, String password) throws Exception{
         User user = null;
         String sql = "select * from user where userId=? and password=?";
         try {

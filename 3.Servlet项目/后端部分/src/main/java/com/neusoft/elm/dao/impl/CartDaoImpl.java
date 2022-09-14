@@ -18,7 +18,7 @@ public class CartDaoImpl implements CartDao {
     private PreparedStatement pst = null;
     private ResultSet rs = null;
 
-    public int saveCart(Cart cart) throws Exception{
+    public int saveCart(Cart cart) throws Exception {
         int result = 0;
         String sql = "insert into cart values(null,?,?,?,1)";
         try {

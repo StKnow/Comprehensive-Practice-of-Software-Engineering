@@ -11,12 +11,12 @@ import com.neusoft.elm.util.DBUtil;
 
 public class UserServiceImpl implements UserService {
     @Override
-    public User getUserByPass(String userId, String password) {
+    public User  getUserByIdByPass(String userId, String password) {
         User user = new User();
         UserDao dao = new UserDaoImpl();
         try {
             DBUtil.getConnection();
-            user = dao.getUserByPass(userId, password);
+            user = dao. getUserByIdByPass(userId, password);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
