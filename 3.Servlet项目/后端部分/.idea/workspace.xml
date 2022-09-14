@@ -10,16 +10,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0828375-4b1a-49de-b386-ea2d48dd2902" name="变更" comment="Servlet 调试">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/elm03_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/elm03_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/elm03_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/elm03_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/babel-loader/94ed2a338ec6307f9b069c95e6edc43c.json" beforeDir="false" afterPath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/babel-loader/94ed2a338ec6307f9b069c95e6edc43c.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/babel-loader/c06eefe5c2d391e37ba247c89ab3ad87.json" beforeDir="false" afterPath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/babel-loader/c06eefe5c2d391e37ba247c89ab3ad87.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/babel-loader/c0e867714db03a9364d327670456717f.json" beforeDir="false" afterPath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/babel-loader/c0e867714db03a9364d327670456717f.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/babel-loader/dc20447bd87f8c544e73c6a1aa99b77d.json" beforeDir="false" afterPath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/babel-loader/dc20447bd87f8c544e73c6a1aa99b77d.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/vue-loader/1fded0abe0ba3d4aa10ec3e2b1def3ee.json" beforeDir="false" afterPath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/vue-loader/1fded0abe0ba3d4aa10ec3e2b1def3ee.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/vue-loader/3149b8173ace2cc8c030469adf52bbcf.json" beforeDir="false" afterPath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/vue-loader/3149b8173ace2cc8c030469adf52bbcf.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/vue-loader/48cf13724226ebccf311cf77aa8e11b4.json" beforeDir="false" afterPath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/vue-loader/48cf13724226ebccf311cf77aa8e11b4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/vue-loader/5cb2beb7476058bf11541aaaef06810e.json" beforeDir="false" afterPath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/vue-loader/5cb2beb7476058bf11541aaaef06810e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/vue-loader/6464e2abd88f1cf6f42e98d745711350.json" beforeDir="false" afterPath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/vue-loader/6464e2abd88f1cf6f42e98d745711350.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/vue-loader/7c9ecfe60b6dfab9cd03ad2dad881601.json" beforeDir="false" afterPath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/vue-loader/7c9ecfe60b6dfab9cd03ad2dad881601.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/vue-loader/7db4fedf847d40235daec9b619064c69.json" beforeDir="false" afterPath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/vue-loader/7db4fedf847d40235daec9b619064c69.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/vue-loader/a7b3aa047c65978382e0ad34e5084fd4.json" beforeDir="false" afterPath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/vue-loader/a7b3aa047c65978382e0ad34e5084fd4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/vue-loader/c572d1f85874fab1edd162372684a54c.json" beforeDir="false" afterPath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/vue-loader/c572d1f85874fab1edd162372684a54c.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/vue-loader/e930ea7efead7e8e924dc4d14c344317.json" beforeDir="false" afterPath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/.cache/vue-loader/e930ea7efead7e8e924dc4d14c344317.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/webpack/hot/log.js" beforeDir="false" afterPath="$PROJECT_DIR$/../前端部分/elmclient/node_modules/webpack/hot/log.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../前端部分/elmclient/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../前端部分/elmclient/src/views/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../前端部分/elmclient/src/views/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../前端部分/elmclient/src/views/Register.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/util/DBUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neusoft/elm/util/DBUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neusoft/elm/util/DBUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/util/DBUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/util/DBUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/util/DBUtil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,6 +199,10 @@
       <workItem from="1663077871293" duration="583000" />
       <workItem from="1663081831368" duration="4884000" />
       <workItem from="1663087566528" duration="1131000" />
+      <workItem from="1663115302073" duration="570000" />
+      <workItem from="1663116053121" duration="4187000" />
+      <workItem from="1663123579128" duration="2365000" />
+      <workItem from="1663146149598" duration="688000" />
     </task>
     <task id="LOCAL-00001" summary="Servlet seventh commit">
       <created>1662393337262</created>
