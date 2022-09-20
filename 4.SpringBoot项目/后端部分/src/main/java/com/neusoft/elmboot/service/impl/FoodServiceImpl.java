@@ -17,4 +17,9 @@ public class FoodServiceImpl implements FoodService {
     public List<Food> listFoodByBusinessId(Integer businessId) {
         return foodMapper.listFoodByBusinessId(businessId);
     }
+
+    @Override
+    public Food getFoodById(Integer foodId) {
+        return foodMapper.getFoodById(foodId);
+    }
 }

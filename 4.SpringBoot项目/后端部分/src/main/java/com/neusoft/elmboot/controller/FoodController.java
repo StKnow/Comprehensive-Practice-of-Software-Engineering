@@ -21,4 +21,9 @@ public class FoodController {
     public List<Food> listFoodByBusinessId(Food food) throws Exception {
         return foodService.listFoodByBusinessId(food.getBusinessId());
     }
+
+    @RequestMapping("getFoodById")
+    public Food getFoodById(Integer foodId) throws Exception {
+        return foodService.getFoodById(foodId);
+    }
 }
