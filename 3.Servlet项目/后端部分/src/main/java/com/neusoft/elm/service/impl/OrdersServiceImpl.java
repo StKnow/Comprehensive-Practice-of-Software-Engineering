@@ -1,5 +1,8 @@
 package com.neusoft.elm.service.impl;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.neusoft.elm.dao.CartDao;
 import com.neusoft.elm.dao.OrderDetailetDao;
 import com.neusoft.elm.dao.OrdersDao;
@@ -12,61 +15,52 @@ import com.neusoft.elm.po.Orders;
 import com.neusoft.elm.service.OrdersService;
 import com.neusoft.elm.util.DBUtil;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class OrdersServiceImpl implements OrdersService {
-
     @Override
-    public int createOrder(String userId, Integer businessId, Integer daId, Double orderTotal) {
+    public int createOrders(String userId, Integer businessId, Integer daId, Double orderTotal) {
         int orderId = 0;
-        CartDao cartdao = new CartDaoImpl();
-        OrdersDao orderDao = new OrdersDaoImpl();
+        CartDao cartDao = new CartDaoImpl();
+        OrdersDao ordersDao = new OrdersDaoImpl();
         OrderDetailetDao orderDetailetDao = new OrderDetailetDaoImpl();
         try {
-            DBUtil.beginTransaction();  //开启一个事务
-
-            //1.查询当前用户购物车中当前商家的所有食品(放入订单明细)
+            DBUtil.beginTransaction(); // 开启一个事务
+            // 1、查询当前用户购物车中当前商家的所有食品（目的是放入订单明细中）
             Cart cart = new Cart();
             cart.setUserId(userId);
-            cart.setCartId(businessId);
-            List<Cart> cartList = cartdao.listCart(cart);
-
-            //2.创建订单，并获取订单编号
+            cart.setBusinessId(businessId);
+            List<Cart> cartList = cartDao.listCart(cart);
+            // 2、创建订单，并得到订单编号
             Orders orders = new Orders();
             orders.setUserId(userId);
             orders.setBusinessId(businessId);
             orders.setDaId(daId);
             orders.setOrderTotal(orderTotal);
-            orderId = orderDao.saveOrders(orders);
-
-            //3.向订单明细表中批量插入数据
-            List<OrderDetailet> orderDetailetList = new ArrayList<>();
+            orderId = ordersDao.saveOrders(orders);
+            // 3、向订单明细表中批量添加明细数据
+            List<OrderDetailet> orderDetailetList = new ArrayList();
             for (Cart c : cartList) {
-                OrderDetailet orderDetailet = new OrderDetailet();
-                orderDetailet.setOrderId(orderId);
-                orderDetailet.setFoodId(c.getFoodId());
-                orderDetailet.setQuantity(c.getQuantity());
-                orderDetailetList.add(orderDetailet);
+                OrderDetailet od = new OrderDetailet();
+                od.setOrderId(orderId);
+                od.setFoodId(c.getFoodId());
+                od.setQuantity(c.getQuantity());
+                orderDetailetList.add(od);
             }
             orderDetailetDao.saveOrderDetailetBatch(orderDetailetList);
-
-            //4.清空购物车(条件：当前用户、当前商家)
-            cartdao.removeCart(cart);
-
-            DBUtil.commitTransaction(); //提交一个事物
+            // 4、清空购物车（条件：当前用户、当前商家）
+            cartDao.removeCart(cart);
+            DBUtil.commitTransaction(); // 提交一个事务
         } catch (Exception e) {
             orderId = 0;
             try {
-                DBUtil.rollbackTransaction();   //回滚一个事务
-            } catch (Exception ex) {
-                ex.printStackTrace();
+                DBUtil.rollbackTransaction(); // 回滚一个事务
+            } catch (Exception e1) {
+                e1.printStackTrace();
             }
             e.printStackTrace();
         } finally {
             DBUtil.close();
         }
-        return 0;
+        return orderId;
     }
 
     @Override
@@ -74,17 +68,13 @@ public class OrdersServiceImpl implements OrdersService {
         Orders orders = null;
         OrdersDao ordersDao = new OrdersDaoImpl();
         OrderDetailetDao orderDetailetDao = new OrderDetailetDaoImpl();
-
         try {
-           DBUtil.getConnection();
-
-           //1.根据订单id查询订单信息(多对一，商家)
+            DBUtil.getConnection();
+            //根据orderId查询订单信息（多对一：商家）
             orders = ordersDao.getOrdersById(orderId);
-
-           //2.根据订单id查询订单明细信息
+            //根据orderID查询orderDetailet
             List<OrderDetailet> list = orderDetailetDao.listOrderDetailetByOrderId(orderId);
             orders.setList(list);
-
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -92,26 +82,22 @@ public class OrdersServiceImpl implements OrdersService {
         }
         return orders;
     }
-    @Override
-    public List<Orders> listOrdersByUserId(String userId){
-        List<Orders> list = new ArrayList<>();
 
+
+    @Override
+    public List<Orders> listOrdersByUserId(String userId) {
+        List<Orders> list = new ArrayList<>();
         OrdersDao ordersDao = new OrdersDaoImpl();
         OrderDetailetDao orderDetailetDao = new OrderDetailetDaoImpl();
-
         try {
             DBUtil.getConnection();
-
-            //1.根据用户id查询订单信息(多对一，商家)
+            // 1、根据用户ID查询订单信息（多对一：商家）
             list = ordersDao.listOrdersByUserId(userId);
-
-            //2.查询多个订单的明细信息
-            for(Orders o : list)
-            {
+            // 2、查询多个订单的订单明细信息
+            for (Orders o : list) {
                 List<OrderDetailet> odList = orderDetailetDao.listOrderDetailetByOrderId(o.getOrderId());
                 o.setList(odList);
             }
-
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -119,4 +105,5 @@ public class OrdersServiceImpl implements OrdersService {
         }
         return list;
     }
+
 }

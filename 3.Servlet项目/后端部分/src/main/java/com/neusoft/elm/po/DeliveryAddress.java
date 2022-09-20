@@ -55,4 +55,6 @@ public class DeliveryAddress {
     public void setUserId(String userId) {
         this.userId = userId;
     }
+
+
 }

@@ -55,4 +55,6 @@ public class User {
     public void setDelTag(Integer delTag) {
         this.delTag = delTag;
     }
+
+
 }

@@ -9,4 +9,5 @@ public class CommonUtil {
         Calendar calendar = Calendar.getInstance();
         return sdf.format(calendar.getTime());
     }
+
 }

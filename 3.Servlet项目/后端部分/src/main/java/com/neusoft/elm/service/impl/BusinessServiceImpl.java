@@ -1,15 +1,16 @@
 package com.neusoft.elm.service.impl;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.neusoft.elm.dao.BusinessDao;
 import com.neusoft.elm.dao.impl.BusinessDaoImpl;
 import com.neusoft.elm.po.Business;
 import com.neusoft.elm.service.BusinessService;
 import com.neusoft.elm.util.DBUtil;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class BusinessServiceImpl implements BusinessService {
+
     @Override
     public List<Business> listBusinessByOrderTypeId(Integer orderTypeId) {
         List<Business> list = new ArrayList<>();
@@ -17,7 +18,7 @@ public class BusinessServiceImpl implements BusinessService {
         try {
             DBUtil.getConnection();
             list = dao.listBusinessByOrderTypeId(orderTypeId);
-        } catch(Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         } finally {
             DBUtil.close();
@@ -32,13 +33,11 @@ public class BusinessServiceImpl implements BusinessService {
         try {
             DBUtil.getConnection();
             business = dao.getBusinessById(businessId);
-        } catch(Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         } finally {
             DBUtil.close();
         }
         return business;
     }
-
-
 }

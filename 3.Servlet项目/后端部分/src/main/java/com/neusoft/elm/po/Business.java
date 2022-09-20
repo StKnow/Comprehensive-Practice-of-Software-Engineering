@@ -82,4 +82,6 @@ public class Business {
     public void setRemarks(String remarks) {
         this.remarks = remarks;
     }
+
+
 }

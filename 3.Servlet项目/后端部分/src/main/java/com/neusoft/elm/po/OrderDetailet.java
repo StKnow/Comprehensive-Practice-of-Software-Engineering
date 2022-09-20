@@ -5,7 +5,6 @@ public class OrderDetailet {
     private Integer orderId;
     private Integer foodId;
     private Integer quantity;
-
     //多对一：所属食品
     private Food food;
 
@@ -48,4 +47,6 @@ public class OrderDetailet {
     public void setFood(Food food) {
         this.food = food;
     }
+
+
 }

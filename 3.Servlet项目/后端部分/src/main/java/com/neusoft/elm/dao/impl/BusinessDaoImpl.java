@@ -1,19 +1,23 @@
 package com.neusoft.elm.dao.impl;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
 import com.neusoft.elm.dao.BusinessDao;
 import com.neusoft.elm.po.Business;
 import com.neusoft.elm.util.DBUtil;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.util.ArrayList;
-import java.util.List;
 
 public class BusinessDaoImpl implements BusinessDao {
+
+
     private Connection con = null;
     private PreparedStatement pst = null;
     private ResultSet rs = null;
+
 
     @Override
     public List<Business> listBusinessByOrderTypeId(Integer orderTypeId) throws Exception {
@@ -24,6 +28,7 @@ public class BusinessDaoImpl implements BusinessDao {
             pst = con.prepareStatement(sql);
             pst.setInt(1, orderTypeId);
             rs = pst.executeQuery();
+
             while (rs.next()) {
                 Business business = new Business();
                 business.setBusinessId(rs.getInt("businessId"));
@@ -38,10 +43,11 @@ public class BusinessDaoImpl implements BusinessDao {
                 list.add(business);
             }
         } finally {
-            DBUtil.close(rs,pst);
+            DBUtil.close(rs, pst);
         }
         return list;
     }
+
 
     @Override
     public Business getBusinessById(Integer businessId) throws Exception {
@@ -52,7 +58,8 @@ public class BusinessDaoImpl implements BusinessDao {
             pst = con.prepareStatement(sql);
             pst.setInt(1, businessId);
             rs = pst.executeQuery();
-            while(rs.next()) {
+            while (rs.next()) {
+
                 business = new Business();
                 business.setBusinessId(rs.getInt("businessId"));
                 business.setBusinessName(rs.getString("businessName"));
@@ -63,10 +70,13 @@ public class BusinessDaoImpl implements BusinessDao {
                 business.setStarPrice(rs.getDouble("starPrice"));
                 business.setDeliveryPrice(rs.getDouble("deliveryPrice"));
                 business.setRemarks(rs.getString("remarks"));
+
             }
         } finally {
-            DBUtil.close(rs,pst);
+            DBUtil.close(rs, pst);
         }
         return business;
     }
 }
+ 
+ 

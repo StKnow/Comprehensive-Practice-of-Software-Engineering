@@ -1,21 +1,22 @@
 package com.neusoft.elm.controller;
 
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
 import com.neusoft.elm.po.Orders;
 import com.neusoft.elm.service.OrdersService;
 import com.neusoft.elm.service.impl.OrdersServiceImpl;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.xml.ws.EndpointReference;
-import java.util.List;
-
 public class OrdersController {
+
     public Object createOrders(HttpServletRequest request) throws Exception {
         String userId = request.getParameter("userId");
         Integer businessId = Integer.valueOf(request.getParameter("businessId"));
         Integer daId = Integer.valueOf(request.getParameter("daId"));
         Double orderTotal = Double.valueOf(request.getParameter("orderTotal"));
         OrdersService service = new OrdersServiceImpl();
-        int orderId = service.createOrder(userId, businessId, daId, orderTotal);
+        int orderId = service.createOrders(userId, businessId, daId, orderTotal);
         return orderId;
     }
 
@@ -26,10 +27,11 @@ public class OrdersController {
         return orders;
     }
 
-    public Object listOrdersByUserId(HttpServletRequest request) throws Exception{
+    public Object listOrdersByUserId(HttpServletRequest request) throws Exception {
         String userId = request.getParameter("userId");
         OrdersService service = new OrdersServiceImpl();
         List<Orders> list = service.listOrdersByUserId(userId);
         return list;
     }
+
 }
