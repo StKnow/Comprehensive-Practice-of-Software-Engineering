@@ -34,7 +34,7 @@
             <i
               class="fa fa-minus-circle"
               @click="minus(index)"
-              v￾show="item.quantity!=0"
+              v-show="item.quantity!=0"
             ></i>
           </div>
           <p>
@@ -80,7 +80,7 @@
         <div
           class="cart-right-item"
           @click="toOrder"
-          v￾show="totalSettle>=business.starPrice"
+          v-show="totalSettle>=business.starPrice"
         >
           去结算
         </div>
