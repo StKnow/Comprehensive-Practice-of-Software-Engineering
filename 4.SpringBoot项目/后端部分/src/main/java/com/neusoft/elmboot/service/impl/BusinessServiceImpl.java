@@ -17,4 +17,9 @@ public class BusinessServiceImpl implements BusinessService {
     public List<Business> listBusinessByOrderTypeId(Integer orderTypeId) {
         return businessMapper.listBusinessByOrderTypeId(orderTypeId);
     }
+
+    @Override
+    public Business getBusinessById(Integer businessId) {
+        return businessMapper.getBusinessById(businessId);
+    }
 }
