@@ -127,6 +127,7 @@ export default {
         )
         .then((response) => {
           let orderId = response.data;
+          alert(response.data);
           if (orderId > 0) {
             this.$router.push({
               path: "/payment",
