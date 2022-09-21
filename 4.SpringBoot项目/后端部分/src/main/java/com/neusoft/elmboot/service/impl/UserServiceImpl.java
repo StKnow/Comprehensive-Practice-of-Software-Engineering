@@ -15,4 +15,14 @@ public class UserServiceImpl implements UserService {
     public User getUserByIdByPass(User user) {
         return userMapper.getUserByIdByPass(user);
     }
+
+    @Override
+    public int getUserById(String userId) {
+        return userMapper.getUserById(userId);
+    }
+
+    @Override
+    public int saveUser(User user) {
+        return userMapper.saveUser(user);
+    }
 }
