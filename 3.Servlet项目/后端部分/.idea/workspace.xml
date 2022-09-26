@@ -9,32 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0828375-4b1a-49de-b386-ea2d48dd2902" name="变更" comment="Servlet 最终版本">
+    <list default="true" id="c0828375-4b1a-49de-b386-ea2d48dd2902" name="变更" comment="Servlet 文件修复">
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/3.Servlet项目.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neusoft/elm/controller/DeliveryAddressController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/controller/DeliveryAddressController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neusoft/elm/controller/OrdersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/controller/OrdersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neusoft/elm/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neusoft/elm/dao/impl/CartDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/dao/impl/CartDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neusoft/elm/dao/impl/DeliveryAddressDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/dao/impl/DeliveryAddressDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neusoft/elm/dao/impl/OrderDetailetDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/dao/impl/OrderDetailetDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neusoft/elm/dao/impl/OrdersDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/dao/impl/OrdersDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neusoft/elm/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/dao/impl/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neusoft/elm/service/OrdersService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/service/OrdersService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neusoft/elm/service/impl/DeliveryAddressServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/service/impl/DeliveryAddressServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neusoft/elm/service/impl/OrdersServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/service/impl/OrdersServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neusoft/elm/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neusoft/elm/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/controller/DeliveryAddressController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/controller/DeliveryAddressController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/controller/OrdersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/controller/OrdersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/dao/impl/CartDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/dao/impl/CartDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/dao/impl/DeliveryAddressDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/dao/impl/DeliveryAddressDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/dao/impl/OrderDetailetDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/dao/impl/OrderDetailetDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/dao/impl/OrdersDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/dao/impl/OrdersDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/dao/impl/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/service/OrdersService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/service/OrdersService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/service/impl/DeliveryAddressServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/service/impl/DeliveryAddressServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/service/impl/OrdersServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/service/impl/OrdersServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elm03-1.0-SNAPSHOT/WEB-INF/classes/com/neusoft/elm/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +72,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../4.SpringBoot项目/后端部分" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -223,7 +203,11 @@
       <workItem from="1663566422534" duration="31000" />
       <workItem from="1663657994773" duration="4170000" />
       <workItem from="1663662284094" duration="139000" />
-      <workItem from="1663774889172" duration="820000" />
+      <workItem from="1663774889172" duration="3103000" />
+      <workItem from="1663990238080" duration="879000" />
+      <workItem from="1663991437953" duration="336000" />
+      <workItem from="1663994066903" duration="598000" />
+      <workItem from="1664095010055" duration="616000" />
     </task>
     <task id="LOCAL-00001" summary="Servlet seventh commit">
       <created>1662393337262</created>
@@ -274,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663661169434</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Servlet 文件修复">
+      <created>1663775876394</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663775876394</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +302,8 @@
     <MESSAGE value="Servlet第四部分完成" />
     <MESSAGE value="Servlet 调试" />
     <MESSAGE value="Servlet 最终版本" />
-    <option name="LAST_COMMIT_MESSAGE" value="Servlet 最终版本" />
+    <MESSAGE value="Servlet 文件修复" />
+    <option name="LAST_COMMIT_MESSAGE" value="Servlet 文件修复" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
