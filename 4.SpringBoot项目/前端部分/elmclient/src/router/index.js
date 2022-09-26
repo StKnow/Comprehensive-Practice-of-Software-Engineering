@@ -11,6 +11,9 @@ import OrderList from '../views/OrderList.vue'
 import AddUserAddress from '../views/AddUserAddress.vue'
 import EditUserAddress from '../views/EditUserAddress.vue'
 import Register from '../views/Register.vue'
+import MembershipRegister from '../views/MembershipRegister.vue'
+import MyProfile from '../views/MyProfile.vue'
+
 Vue.use(VueRouter)
 const routes = [{
   path: '/',
@@ -60,6 +63,14 @@ const routes = [{
   path: '/register',
   name: 'Register',
   component: Register
+}, {
+  path: '/membershipRegister',
+  name: 'MembershipRegister',
+  component: MembershipRegister
+}, {
+  path: '/myProfile',
+  name: 'MyProfile',
+  component: MyProfile
 }
 
 ]

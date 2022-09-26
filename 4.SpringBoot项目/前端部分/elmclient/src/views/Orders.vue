@@ -23,9 +23,11 @@
       <li v-for="item in cartArr">
         <div class="order-detailed-left">
           <img :src="item.food.foodImg" />
-          <p>{{ item.food.foodName }} x {{ item.quantity }}</p>
+          <p>{{ item.food.foodName }} x {{ item.quantity }} x {{ grade }}</p>
         </div>
-        <p>&#165;{{ item.food.foodPrice * item.quantity }}</p>
+        <p>
+          &#165;{{ item.food.foodPrice * item.quantity * (1 - grade * 0.1) }}
+        </p>
       </li>
     </ul>
     <div class="order-deliveryfee">
@@ -49,6 +51,7 @@ export default {
       user: {},
       cartArr: [],
       deliveryaddress: {},
+      grade: 0,
     };
   },
   created() {
@@ -83,6 +86,21 @@ export default {
         this.cartArr = response.data;
       })
       .catch((error) => {
+        console.error(error);
+      });
+
+    //查询会员信息
+    this.user = this.$getSessionStorage("user");
+    this.$axios
+      .post(
+        "MembershipController/getMembershipById",
+        this.$qs.stringify(this.user.userId)
+      )
+      .then((response) => {
+        this.grade = response.data;
+      })
+      .catch((error) => {
+        this.grade = 0;
         console.error(error);
       });
   },

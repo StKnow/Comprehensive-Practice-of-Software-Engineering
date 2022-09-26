@@ -79,7 +79,9 @@
         <h3>超级会员</h3>
         <p>&#8226; 每月享超值权益</p>
       </div>
-      <div class="right">立即开通 &gt;</div>
+      <div class="right">
+        <li @click="toMembershipRegister">立即开通 &gt;</li>
+      </div>
     </div>
     <!-- 推荐商家部分 -->
     <div class="recommend">
@@ -361,6 +363,12 @@ export default {
       this.$router.push({
         path: "/businessList",
         query: { orderTypeId: orderTypeId },
+      });
+    },
+
+    toMembershipRegister() {
+      this.$router.push({
+        path: "/membershipRegister",
       });
     },
   },

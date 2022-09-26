@@ -16,8 +16,13 @@
     <!-- 订单明细部分 -->
     <ul class="order-detailet" v-show="isShowDetailet">
       <li v-for="item in orders.list">
-        <p>{{ item.food.foodName }} x {{ item.quantity }}</p>
-        <p>&#165;{{ item.food.foodPrice * item.quantity }}</p>
+        <p>
+          {{ item.food.foodName }} x {{ item.quantity }} x
+          {{ grade }}
+        </p>
+        <p>
+          &#165;{{ item.food.foodPrice * item.quantity * (1 - grade * 0.1) }}
+        </p>
       </li>
       <li>
         <p>配送费</p>
@@ -51,6 +56,7 @@ export default {
       orders: {
         business: {},
       },
+      grade: 0,
       isShowDetailet: false,
     };
   },
@@ -66,6 +72,21 @@ export default {
         this.orders = response.data;
       })
       .catch((error) => {
+        console.error(error);
+      });
+
+    //查询当前会员等级
+    this.user = this.$getSessionStorage("user");
+    this.$axios
+      .post(
+        "MembershipController/getMembershipById",
+        this.$qs.stringify(this.user.userId)
+      )
+      .then((response) => {
+        this.grade = response.data;
+      })
+      .catch((error) => {
+        this.grade = 0;
         console.error(error);
       });
   },
