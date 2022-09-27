@@ -1,6 +1,7 @@
 package com.neusoft.elmboot.controller;
 
 import com.neusoft.elmboot.po.Membership;
+import com.neusoft.elmboot.po.User;
 import com.neusoft.elmboot.service.MembershipService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +19,8 @@ public class MembershipController {
     }
 
     @RequestMapping("/getMembershipById")
-    public int getMembershipById(String userId) throws Exception {
-        return membershipService.getMembershipById(userId);
+    public Integer getMembershipById(User user) throws Exception {
+        System.out.println("用户id："+user.getUserId());
+        return membershipService.getMembershipById(user.getUserId());
     }
 }

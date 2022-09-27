@@ -17,7 +17,7 @@ public class MembershipServiceImpl implements MembershipService {
     }
 
     @Override
-    public int getMembershipById(String userId) {
+    public Integer getMembershipById(String userId) {
         return membershipMapper.getMembershipById(userId);
     }
 }

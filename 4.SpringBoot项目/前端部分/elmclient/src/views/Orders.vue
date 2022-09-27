@@ -25,7 +25,9 @@
           <img :src="item.food.foodImg" />
           <p>{{ item.food.foodName }} x {{ item.quantity }} x {{ grade }}</p>
         </div>
-        <p>&#165;{{ item.food.foodPrice * item.quantity }}</p>
+        <p>
+          &#165;{{ item.food.foodPrice * item.quantity }}
+        </p>
       </li>
     </ul>
     <div class="order-deliveryfee">
@@ -88,17 +90,15 @@ export default {
       });
 
     //查询会员信息
-    this.user = this.$getSessionStorage("user");
     this.$axios
       .post(
         "MembershipController/getMembershipById",
-        this.$qs.stringify(this.user.userId)
+        this.$qs.stringify(this.user)
       )
       .then((response) => {
         this.grade = response.data;
       })
       .catch((error) => {
-        this.grade = 0;
         console.error(error);
       });
   },
@@ -143,7 +143,6 @@ export default {
         )
         .then((response) => {
           let orderId = response.data;
-          alert(response.data);
           if (orderId > 0) {
             this.$router.push({
               path: "/payment",

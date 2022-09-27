@@ -80,7 +80,7 @@ export default {
     this.$axios
       .post(
         "MembershipController/getMembershipById",
-        this.$qs.stringify(this.user.userId)
+        this.$qs.stringify(this.user)
       )
       .then((response) => {
         this.grade = response.data;

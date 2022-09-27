@@ -11,6 +11,6 @@ public interface MembershipMapper {
     public int saveMembership(Membership membership);
 
     @Select("select grade from membership where userId=#{userId}")
-    public int getMembershipById(String userId);
+    public Integer getMembershipById(String userId);
 }
 
