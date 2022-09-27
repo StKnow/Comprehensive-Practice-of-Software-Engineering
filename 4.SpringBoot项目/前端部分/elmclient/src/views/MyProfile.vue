@@ -56,9 +56,11 @@ export default {
   },
   created() {
     this.user = this.$getSessionStorage("user");
+
+    //查询当前用户信息
     this.$axios
       .post(
-        "MyProfileController/getMembershipById",
+        "MembershipController/getMembershipById",
         this.$qs.stringify(this.user)
       )
       .then((response) => {
@@ -148,7 +150,7 @@ export default {
   font-size: 0.426667rem;
   line-height: 0.453333rem;
   line-height: 4.533333vw;
-  background: rgba(255, 255, 255, 0.815);
+  background: rgba(172, 169, 169, 0.815);
 }
 .wrapper .littleitem .littleitembutton {
   font-size: 4.8vw;

@@ -23,11 +23,9 @@
       <li v-for="item in cartArr">
         <div class="order-detailed-left">
           <img :src="item.food.foodImg" />
-          <p>{{ item.food.foodName }} x {{ item.quantity }} x {{ grade }}</p>
+          <p>{{ item.food.foodName }} x {{ item.quantity }}</p>
         </div>
-        <p>
-          &#165;{{ item.food.foodPrice * item.quantity }}
-        </p>
+        <p>&#165;{{ item.food.foodPrice * item.quantity }}</p>
       </li>
     </ul>
     <div class="order-deliveryfee">

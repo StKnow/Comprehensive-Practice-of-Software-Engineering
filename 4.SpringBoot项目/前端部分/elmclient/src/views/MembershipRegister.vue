@@ -51,17 +51,24 @@ export default {
   methods: {
     membershipRegister() {
       this.user = this.$getSessionStorage("user");
-      //注册请求
+      //注册会员
       this.$axios
         .post(
-          "MembershipController/saveMembership",
+          "MembershipController/updateMembership",
           this.$qs.stringify({
             userId: this.user.userId,
             grade: this.userMembership.grade,
           })
         )
         .then((response) => {
-          if (response.data > 0) {
+          if (response.data == this.userMembership.grade) {
+            alert("注册会员失败，您已是该会员！");
+          } else if (response.data > this.userMembership.grade) {
+            alert("注册会员失败，无法降级会员！");
+          } else if (
+            response.data > 0 &&
+            response.data < this.userMembership.grade
+          ) {
             alert("注册会员成功！");
             this.$router.go(-1);
           } else {
