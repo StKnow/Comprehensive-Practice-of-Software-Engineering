@@ -25,9 +25,7 @@
           <img :src="item.food.foodImg" />
           <p>{{ item.food.foodName }} x {{ item.quantity }} x {{ grade }}</p>
         </div>
-        <p>
-          &#165;{{ item.food.foodPrice * item.quantity * (1 - grade * 0.1) }}
-        </p>
+        <p>&#165;{{ item.food.foodPrice * item.quantity }}</p>
       </li>
     </ul>
     <div class="order-deliveryfee">
@@ -111,7 +109,7 @@ export default {
         totalPrice += cartItem.food.foodPrice * cartItem.quantity;
       }
       totalPrice += this.business.deliveryPrice;
-      return totalPrice;
+      return totalPrice * (1 - this.grade * 0.1);
     },
   },
   filters: {

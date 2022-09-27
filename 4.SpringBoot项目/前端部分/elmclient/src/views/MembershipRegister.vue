@@ -10,19 +10,19 @@
         <div class="content" style="font-size: 5vw">
           <input
             type="radio"
-            v-model="user.userMembership.grade"
+            v-model="userMembership.grade"
             value="1"
             style="width: 6vw; height: 4.5vw"
           /><img src="../assets/白银会员.png" />白银会员 &#165;10<br />
           <input
             type="radio"
-            v-model="user.userMembership.grade"
+            v-model="userMembership.grade"
             value="2"
             style="width: 6vw; height: 4.5vw"
           /><img src="../assets/黄金会员.png" />黄金会员 &#165;20<br />
           <input
             type="radio"
-            v-model="user.userMembership.grade"
+            v-model="userMembership.grade"
             value="3"
             style="width: 6vw; height: 4.5vw"
           /><img src="../assets/钻石会员.png" />钻石会员 &#165;30<br />
