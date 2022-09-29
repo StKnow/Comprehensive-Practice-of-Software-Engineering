@@ -40,7 +40,7 @@
       </li>
     </ul>
     <div class="payment-button">
-      <button>确认支付</button>
+      <button @click="payment">确认支付</button>
     </div>
     <!-- 底部菜单部分 -->
     <Footer></Footer>
@@ -105,6 +105,26 @@ export default {
   methods: {
     detailetShow() {
       this.isShowDetailet = !this.isShowDetailet;
+    },
+    payment() {
+      this.$axios
+        .post(
+          "OrdersController/payOrders",
+          this.$qs.stringify({
+            orderId: this.orderId,
+          })
+        )
+        .then((response) => {
+          if (response.data > 0) {
+            alert("支付订单成功！");
+            this.$router.go(-1);
+          } else {
+            alert("支付订单失败！");
+          }
+        })
+        .catch((error) => {
+          console.error(error);
+        });
     },
   },
   components: {
