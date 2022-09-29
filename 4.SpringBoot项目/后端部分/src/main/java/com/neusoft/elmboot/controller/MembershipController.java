@@ -20,7 +20,11 @@ public class MembershipController {
 
     @RequestMapping("/getMembershipById")
     public Integer getMembershipById(User user) throws Exception {
-        System.out.println("用户id："+user.getUserId());
         return membershipService.getMembershipById(user.getUserId());
     }
+
+    @RequestMapping("/updateMembership")
+    public int updateMembership(Membership membership) throws Exception {
+        return membershipService.updateMembership(membership)
+;    }
 }

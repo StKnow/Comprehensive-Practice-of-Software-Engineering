@@ -20,4 +20,9 @@ public class MembershipServiceImpl implements MembershipService {
     public Integer getMembershipById(String userId) {
         return membershipMapper.getMembershipById(userId);
     }
+
+    @Override
+    public int updateMembership(Membership membership) {
+        return membershipMapper.updateMembership(membership);
+    }
 }

@@ -4,6 +4,7 @@ import com.neusoft.elmboot.po.Membership;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 
 @Mapper
 public interface MembershipMapper {
@@ -12,5 +13,8 @@ public interface MembershipMapper {
 
     @Select("select grade from membership where userId=#{userId}")
     public Integer getMembershipById(String userId);
+
+    @Update("update membership set grade=#{grade} where userId=#{userId}")
+    public int updateMembership(Membership membership);
 }
 
