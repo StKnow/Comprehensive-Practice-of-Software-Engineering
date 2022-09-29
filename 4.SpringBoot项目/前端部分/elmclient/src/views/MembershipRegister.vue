@@ -54,6 +54,52 @@ export default {
       //注册会员
       this.$axios
         .post(
+          "MembershipController/getMembershipById",
+          this.$qs.stringify(this.user)
+        )
+        .then((response) => {
+          if (response.data == this.userMembership.grade) {
+            alert("注册会员失败，您已是该会员！");
+          } else if (response.data > this.userMembership.grade) {
+            alert("注册会员失败，无法降级会员！");
+          } else if (response.data == 0) {
+            this.saveMembership();
+          } else {
+            this.updateMembership();
+          }
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    },
+    saveMembership() {
+      this.user = this.$getSessionStorage("user");
+      //注册会员
+      this.$axios
+        .post(
+          "MembershipController/saveMembership",
+          this.$qs.stringify({
+            userId: this.user.userId,
+            grade: this.userMembership.grade,
+          })
+        )
+        .then((response) => {
+          if (response.data > 0) {
+            alert("注册会员成功！");
+            this.$router.go(-1);
+          } else {
+            alert("注册会员失败！");
+          }
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    },
+    updateMembership() {
+      this.user = this.$getSessionStorage("user");
+      //注册会员
+      this.$axios
+        .post(
           "MembershipController/updateMembership",
           this.$qs.stringify({
             userId: this.user.userId,
@@ -61,18 +107,11 @@ export default {
           })
         )
         .then((response) => {
-          if (response.data == this.userMembership.grade) {
-            alert("注册会员失败，您已是该会员！");
-          } else if (response.data > this.userMembership.grade) {
-            alert("注册会员失败，无法降级会员！");
-          } else if (
-            response.data > 0 &&
-            response.data < this.userMembership.grade
-          ) {
-            alert("注册会员成功！");
+          if (response.data > 0) {
+            alert("升级会员成功！");
             this.$router.go(-1);
           } else {
-            alert("注册会员失败！");
+            alert("升级会员失败！");
           }
         })
         .catch((error) => {
