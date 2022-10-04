@@ -20,7 +20,7 @@
             </div>
             <div class="comment">
               <div class="text">
-                {{ item.text }}
+                {{ item.content }}
               </div>
             </div>
           </div>

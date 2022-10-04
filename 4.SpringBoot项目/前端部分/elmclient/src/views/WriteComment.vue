@@ -5,7 +5,7 @@
       <p>发布评论</p>
     </header>
     <!-- 写评论部分 -->
-    <textarea v-model="text" name="" id="" cols="50" rows="10"></textarea>
+    <textarea v-model="content" name="" id="" cols="50" rows="10"></textarea>
     <div class="button-login">
       <button @click="postComment">发布</button>
     </div>
@@ -19,7 +19,7 @@ export default {
   data() {
     return {
       user: {},
-      text: "",
+      content: "",
       businessId: this.$route.query.businessId,
     };
   },
@@ -32,7 +32,7 @@ export default {
           this.$qs.stringify({
             user: this.user,
             businessId: this.businessId,
-            text: this.text,
+            content: this.content,
           })
         )
         .then((response) => {
