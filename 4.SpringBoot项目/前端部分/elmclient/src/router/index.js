@@ -13,6 +13,8 @@ import EditUserAddress from '../views/EditUserAddress.vue'
 import Register from '../views/Register.vue'
 import MembershipRegister from '../views/MembershipRegister.vue'
 import MyProfile from '../views/MyProfile.vue'
+import Comment from '../views/Comment.vue'
+import WriteComment from '../views/WriteComment.vue'
 
 Vue.use(VueRouter)
 const routes = [{
@@ -71,6 +73,14 @@ const routes = [{
   path: '/myProfile',
   name: 'MyProfile',
   component: MyProfile
+}, {
+  path: '/comment',
+  name: 'Comment',
+  component: Comment
+}, {
+  path: '/writeComment',
+  name: 'WriteComment',
+  component: WriteComment
 }
 
 ]

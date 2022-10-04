@@ -16,6 +16,7 @@
           business.deliveryPrice
         }}配送
       </p>
+      <h6 @click="toComment">评价>></h6>
       <p>{{ business.businessExplain }}</p>
     </div>
     <!-- 食品列表部分 -->
@@ -34,7 +35,7 @@
             <i
               class="fa fa-minus-circle"
               @click="minus(index)"
-              v-show="item.quantity!=0"
+              v-show="item.quantity != 0"
             ></i>
           </div>
           <p>
@@ -80,7 +81,7 @@
         <div
           class="cart-right-item"
           @click="toOrder"
-          v-show="totalSettle>=business.starPrice"
+          v-show="totalSettle >= business.starPrice"
         >
           去结算
         </div>
@@ -274,6 +275,14 @@ export default {
         },
       });
     },
+    toComment() {
+      this.$router.push({
+        path: "/comment",
+        query: {
+          businessId: this.business.businessId,
+        },
+      });
+    },
   },
   computed: {
     //食品总价格
@@ -346,11 +355,18 @@ export default {
 }
 .wrapper .business-info h1 {
   font-size: 5vw;
+  margin-bottom: 0;
 }
 .wrapper .business-info p {
   font-size: 3vw;
   color: #666;
   margin-top: 1vw;
+  margin-bottom: 0;
+}
+.wrapper .business-info h6 {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  font-size: 4vw;
 }
 /****************** 食品列表部分 ******************/
 .wrapper .food {

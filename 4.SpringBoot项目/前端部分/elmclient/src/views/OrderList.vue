@@ -42,6 +42,12 @@
           </p>
           <div class="order-info-right">
             <p>&#165;{{ item.orderTotal }}</p>
+            <div
+              class="order-info-comment-right-icon"
+              @click="writeComment(item)"
+            >
+              去评价
+            </div>
           </div>
         </div>
         <ul class="order-detailet" v-show="item.isShowDetailet">
@@ -102,6 +108,12 @@ export default {
         query: { orderId: orders.orderId },
       });
     },
+    writeComment(orders) {
+      this.$router.push({
+        path: "/Payment",
+        query: { businessId: orders.businessId },
+      });
+    },
   },
   components: {
     Footer,
@@ -158,6 +170,19 @@ export default {
 }
 .wrapper .order li .order-info .order-info-right .order-info-right-icon {
   background-color: #f90;
+  color: #fff;
+  border-radius: 3px;
+  margin-left: 2vw;
+  user-select: none;
+  cursor: pointer;
+}
+.wrapper
+  .order
+  li
+  .order-info
+  .order-info-right
+  .order-info-comment-right-icon {
+  background-color: rgb(102, 212, 100);
   color: #fff;
   border-radius: 3px;
   margin-left: 2vw;
