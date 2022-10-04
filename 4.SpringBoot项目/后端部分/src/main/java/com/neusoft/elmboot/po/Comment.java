@@ -5,6 +5,24 @@ public class Comment {
     private String content;
     private Integer businessId;
     private String userId;
+    private String userName;
+    private Integer grade;
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public Integer getGrade() {
+        return grade;
+    }
+
+    public void setGrade(Integer grade) {
+        this.grade = grade;
+    }
 
     public Integer getRemarkId() {
         return remarkId;

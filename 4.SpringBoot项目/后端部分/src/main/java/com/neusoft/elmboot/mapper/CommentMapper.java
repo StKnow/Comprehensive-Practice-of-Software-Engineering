@@ -9,8 +9,8 @@ import java.util.List;
 
 @Mapper
 public interface CommentMapper {
-    @Insert("insert into comment values(null,#{content},#{businessId},#{userId})")
-    public int saveComment(String content, Integer businessId, String userId);
+    @Insert("insert into comment values(null,#{content},#{businessId},#{userId},#{userName},#{grade})")
+    public int saveComment(String content, Integer businessId, String userId, String userName, Integer grade);
 
     @Select("select * from comment where businessId=#{businessId}")
     public List<Comment> listCommentByBusinessId(Integer businessId);

@@ -14,8 +14,8 @@ public class CommentServiceImpl implements CommentService {
     private CommentMapper commentMapper;
 
     @Override
-    public int saveComment(String content, Integer businessId, String userId) {
-        return commentMapper.saveComment(content, businessId, userId);
+    public int saveComment(String content, Integer businessId, String userId, String userName, Integer grade) {
+        return commentMapper.saveComment(content, businessId, userId, userName, grade);
     }
 
     @Override

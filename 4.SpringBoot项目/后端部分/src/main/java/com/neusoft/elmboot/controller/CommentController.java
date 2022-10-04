@@ -16,13 +16,12 @@ public class CommentController {
     private CommentService commentService;
 
     @RequestMapping("/saveComment")
-    public int saveComment(String content, Integer businessId, String userId) throws Exception {
-        return commentService.saveComment(content, businessId, userId);
+    public int saveComment(String content, Integer businessId, String userId, String userName, Integer grade) throws Exception {
+        return commentService.saveComment(content, businessId, userId,userName,grade);
     }
 
     @RequestMapping("/listCommentByBusinessId")
     public List<Comment> listCommentByBusinessId(Integer businessId) throws Exception {
-        System.out.println("wocoaismasihqadwioha wdqdahjdoiahdowa");
         return commentService.listCommentByBusinessId(businessId);
     }
 }
