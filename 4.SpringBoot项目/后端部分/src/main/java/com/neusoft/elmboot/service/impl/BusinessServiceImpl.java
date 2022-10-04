@@ -22,4 +22,5 @@ public class BusinessServiceImpl implements BusinessService {
     public Business getBusinessById(Integer businessId) {
         return businessMapper.getBusinessById(businessId);
     }
+
 }

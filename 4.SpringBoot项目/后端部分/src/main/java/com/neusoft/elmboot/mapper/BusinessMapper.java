@@ -1,6 +1,7 @@
 package com.neusoft.elmboot.mapper;
 
 import com.neusoft.elmboot.po.Business;
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -13,4 +14,5 @@ public interface BusinessMapper {
 
     @Select("select * from business where businessId=#{businessId}")
     public Business getBusinessById(Integer businessId);
+
 }

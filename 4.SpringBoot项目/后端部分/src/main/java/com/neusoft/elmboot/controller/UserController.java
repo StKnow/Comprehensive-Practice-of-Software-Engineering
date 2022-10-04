@@ -19,13 +19,18 @@ public class UserController {
     }
 
     @RequestMapping("/getUserById")
-    public int getUserById(User user) throws Exception{
+    public int getUserById(User user) throws Exception {
         return userService.getUserById(user.getUserId());
     }
 
     @RequestMapping("/saveUser")
-    public int saveUser(User user) throws Exception{
+    public int saveUser(User user) throws Exception {
         return userService.saveUser(user);
     }
 
+    @RequestMapping("/getuserNameByuserId")
+    public String getUserNameByUserId(String userId) throws Exception {
+        System.out.println("用户名："+userService.getUserNameByUserId(userId));
+        return userService.getUserNameByUserId(userId);
+    }
 }
