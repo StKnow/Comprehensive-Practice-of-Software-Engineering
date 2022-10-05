@@ -16,6 +16,7 @@
                 <div class="usermembership">
                   {{ item.grade | gradeNameFilter }}会员
                 </div>
+                <div class="time">{{ item.commentDate }}</div>
               </div>
             </div>
             <div class="comment">
@@ -163,6 +164,18 @@ export default {
   .usermembership {
   margin: 0 0.25rem;
   font-size: 0.875rem;
+}
+.wrapper
+  .shop-detail
+  .tab-comments
+  .shop-comments-wrap
+  .item
+  .user
+  .userinfo
+  .time {
+  text-align: left;
+  margin: 0.375rem 9.375rem 0 0.5rem;
+  white-space: nowrap;
 }
 .wrapper .shop-detail .tab-comments .shop-comments-wrap .comment {
   margin-top: -0.25rem;
