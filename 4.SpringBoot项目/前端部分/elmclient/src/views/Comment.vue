@@ -176,6 +176,7 @@ export default {
   text-align: left;
   margin: 0.375rem 9.375rem 0 0.5rem;
   white-space: nowrap;
+  font-size:0.5rem;
 }
 .wrapper .shop-detail .tab-comments .shop-comments-wrap .comment {
   margin-top: -0.25rem;
