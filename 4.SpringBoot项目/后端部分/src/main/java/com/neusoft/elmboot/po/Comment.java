@@ -7,6 +7,15 @@ public class Comment {
     private String userId;
     private String userName;
     private Integer grade;
+    private String commentDate;
+
+    public String getCommentDate() {
+        return commentDate;
+    }
+
+    public void setCommentDate(String commentDate) {
+        this.commentDate = commentDate;
+    }
 
     public String getUserName() {
         return userName;

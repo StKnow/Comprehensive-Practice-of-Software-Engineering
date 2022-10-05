@@ -3,6 +3,7 @@ package com.neusoft.elmboot.service.impl;
 import com.neusoft.elmboot.mapper.CommentMapper;
 import com.neusoft.elmboot.po.Comment;
 import com.neusoft.elmboot.service.CommentService;
+import com.neusoft.elmboot.util.CommonUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +16,8 @@ public class CommentServiceImpl implements CommentService {
 
     @Override
     public int saveComment(String content, Integer businessId, String userId, String userName, Integer grade) {
-        return commentMapper.saveComment(content, businessId, userId, userName, grade);
+        String commentDate = CommonUtil.getCurrentDate();
+        return commentMapper.saveComment(content, businessId, userId, userName, grade,commentDate);
     }
 
     @Override

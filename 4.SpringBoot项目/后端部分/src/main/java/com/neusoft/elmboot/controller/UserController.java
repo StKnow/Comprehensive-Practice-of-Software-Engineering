@@ -27,10 +27,4 @@ public class UserController {
     public int saveUser(User user) throws Exception {
         return userService.saveUser(user);
     }
-
-    @RequestMapping("/getuserNameByuserId")
-    public String getUserNameByUserId(String userId) throws Exception {
-        System.out.println("用户名："+userService.getUserNameByUserId(userId));
-        return userService.getUserNameByUserId(userId);
-    }
 }
