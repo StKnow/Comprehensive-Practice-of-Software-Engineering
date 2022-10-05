@@ -21,7 +21,22 @@ export default {
       user: {},
       content: "",
       businessId: this.$route.query.businessId,
+      grade: 0,
     };
+  },
+  created(){
+  this.user = this.$getSessionStorage("user");
+      this.$axios
+      .post(
+        "MembershipController/getMembershipById",
+        this.$qs.stringify(this.user)
+      )
+      .then((response) => {
+        this.grade = response.data;
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   },
   methods: {
     postComment() {
@@ -30,9 +45,11 @@ export default {
         .post(
           "CommentController/saveComment",
           this.$qs.stringify({
-            user: this.user,
+            userId: this.user.userId,
+            userName : this.user.userName,
             businessId: this.businessId,
             content: this.content,
+            grade : this.grade,
           })
         )
         .then((response) => {

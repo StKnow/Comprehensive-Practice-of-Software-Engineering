@@ -110,7 +110,7 @@ export default {
     },
     writeComment(orders) {
       this.$router.push({
-        path: "/Payment",
+        path: "/writeComment",
         query: { businessId: orders.businessId },
       });
     },

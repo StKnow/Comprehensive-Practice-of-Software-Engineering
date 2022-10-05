@@ -12,9 +12,9 @@
             <div class="user">
               <img src="../assets/头像.png" alt="头像" />
               <div class="userinfo">
-                <div class="username">{{ getUsername(item.userId) }}</div>
+                <div class="username">{{ item.userName }}</div>
                 <div class="usermembership">
-                  {{ getUserMembership(item.userId) | gradeNameFilter }}会员
+                  {{ item.grade | gradeNameFilter }}会员
                 </div>
               </div>
             </div>
@@ -40,7 +40,7 @@ export default {
       businessId: this.$route.query.businessId,
     };
   },
-  create() {
+  created() {
     this.$axios
       .post(
         "CommentController/listCommentByBusinessId",
@@ -54,40 +54,6 @@ export default {
       .catch((error) => {
         console.error(error);
       });
-  },
-  methods: {
-    getUsername(userId) {
-      this.$axios
-        .post(
-          "UserController/getuserNameByuserId",
-          this.$qs.stringify({
-            userId,
-          })
-        )
-        .then((response) => {
-          userName = response.data;
-          return userName;
-        })
-        .catch((error) => {
-          console.error(error);
-        });
-    },
-    getUserMembership(userId) {
-      this.$axios
-        .post(
-          "MembershipController/getMembershipById",
-          this.$qs.stringify({
-            userId,
-          })
-        )
-        .then((response) => {
-          userGrade = response.data;
-          return userGrade;
-        })
-        .catch((error) => {
-          console.error(error);
-        });
-    },
   },
   filters: {
     gradeNameFilter(grade) {
