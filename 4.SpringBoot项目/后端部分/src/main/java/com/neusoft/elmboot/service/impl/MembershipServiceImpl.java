@@ -18,7 +18,11 @@ public class MembershipServiceImpl implements MembershipService {
 
     @Override
     public Integer getMembershipById(String userId) {
-        return membershipMapper.getMembershipById(userId);
+        if (membershipMapper.getMembershipById(userId) == null) {
+            return 0;
+        } else {
+            return membershipMapper.getMembershipById(userId);
+        }
     }
 
     @Override

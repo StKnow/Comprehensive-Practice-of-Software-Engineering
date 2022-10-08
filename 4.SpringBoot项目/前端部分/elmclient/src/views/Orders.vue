@@ -107,7 +107,8 @@ export default {
         totalPrice += cartItem.food.foodPrice * cartItem.quantity;
       }
       totalPrice += this.business.deliveryPrice;
-      return totalPrice * (1 - this.grade * 0.1);
+      totalPrice = Number(totalPrice * (1 - this.grade * 0.1)).toFixed(1);
+      return totalPrice;
     },
   },
   filters: {
