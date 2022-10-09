@@ -10,19 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0828375-4b1a-49de-b386-ea2d48dd2902" name="变更" comment="Servlet 文件修复">
-      <change afterPath="$PROJECT_DIR$/../../1.JDBC项目/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../结项报告/indent.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../结项报告/body/Servlet.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../结项报告/body/Servlet.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../结项报告/main.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../../结项报告/main.aux" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../结项报告/main.fdb_latexmk" beforeDir="false" afterPath="$PROJECT_DIR$/../../结项报告/main.fdb_latexmk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../结项报告/main.fls" beforeDir="false" afterPath="$PROJECT_DIR$/../../结项报告/main.fls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../结项报告/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../结项报告/main.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../结项报告/main.out" beforeDir="false" afterPath="$PROJECT_DIR$/../../结项报告/main.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../结项报告/main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../结项报告/main.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../结项报告/main.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../../结项报告/main.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../结项报告/main.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../结项报告/main.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../结项报告/main.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../../结项报告/main.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../结项报告/setup/toc.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../../结项报告/setup/toc.aux" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +74,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -219,6 +213,7 @@
       <workItem from="1664162662425" duration="62000" />
       <workItem from="1664886651665" duration="853000" />
       <workItem from="1665037231351" duration="1778000" />
+      <workItem from="1665287263132" duration="642000" />
     </task>
     <task id="LOCAL-00001" summary="Servlet seventh commit">
       <created>1662393337262</created>

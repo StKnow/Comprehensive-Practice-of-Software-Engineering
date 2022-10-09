@@ -38,16 +38,42 @@
 
 \section{项目设计}
 
-1.数据库设计：
+\noindent
+一. 开发环境：
+
+1. 开发工具：IDEA、DataGrip
+
+2. 检查IDEA的jdk配置：jdk8
+
+3. 检查IDEA的tomcat配置：tomcat9.0.65
+
+4. 检查IDEA的文件编码配置：utf-8
+
+5  检查数据库配置：MySQL8.0.30~\\
+
+\noindent
+二. 数据库设计：
 
 本项目使用MySQL数据库，选择DataGrip作为开发工具。在数据表的设计上，需要创建商家表、食品表、购物车表、送货地址表、订单表、订单明细表、用户表共七张表。
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=15cm,height=17cm]{figures/table2.jpg}
     \caption{Servlet项目数据表}
     \end{figure}
 
-2.服务器端设计：
+\noindent
+三. 服务端设计：
+
+本项目为JavaWeb项目，在后端使用Servlet技术，Tomcat作为容器进行项目开发。在JavaWeb工程的搭建方面，本项目使用基于Servlet的简易MVC架构，能够很好地解决后端与前端地交互。在响应前端请求方面，使用Jackson将java对象或集合转换为json对象或数组后，返回前端。
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm,height=10cm]{figures/MVC.png}
+    \caption{Servlet简易MVC架构}
+    \end{figure}
+
+在解决
 
 
 

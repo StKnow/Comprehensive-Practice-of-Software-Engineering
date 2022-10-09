@@ -1574,6 +1574,7 @@ INPUT d:/texlive/2022/texmf-dist/fonts/tfm/zhmetrics/cyberb/cyberb7b.tfm
 INPUT d:/texlive/2022/texmf-dist/fonts/tfm/zhmetrics/cyberb/cyberb78.tfm
 INPUT d:/texlive/2022/texmf-dist/fonts/tfm/zhmetrics/cyberb/cyberb58.tfm
 INPUT d:/texlive/2022/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei8b.tfm
+INPUT d:/texlive/2022/texmf-dist/fonts/tfm/zhmetrics/cyberb/cyberb73.tfm
 INPUT d:/texlive/2022/texmf-dist/fonts/tfm/zhmetrics/cyberb/cyberb5d.tfm
 INPUT ./figures/table2.jpg
 INPUT ./figures/table2.jpg
@@ -1590,6 +1591,17 @@ INPUT d:/texlive/2022/texmf-dist/fonts/vf/public/txfonts/txr.vf
 INPUT d:/texlive/2022/texmf-dist/fonts/tfm/public/txfonts/rtxptmr.tfm
 INPUT d:/texlive/2022/texmf-dist/fonts/tfm/public/txfonts/rtxr.tfm
 INPUT d:/texlive/2022/texmf-dist/fonts/tfm/zhmetrics/cyberb/cyberb56.tfm
+INPUT d:/texlive/2022/texmf-dist/fonts/tfm/zhmetrics/cyberb/cyberb64.tfm
+INPUT d:/texlive/2022/texmf-dist/fonts/tfm/zhmetrics/cyberb/cyberb8c.tfm
+INPUT d:/texlive/2022/texmf-dist/fonts/tfm/zhmetrics/cyberb/cyberb96.tfm
+INPUT ./figures/MVC.png
+INPUT ./figures/MVC.png
+INPUT figures/MVC.png
+INPUT ./figures/MVC.png
+INPUT ./figures/MVC.png
+INPUT d:/texlive/2022/texmf-dist/fonts/tfm/zhmetrics/cyberb/cyberb7b.tfm
+INPUT d:/texlive/2022/texmf-dist/fonts/tfm/zhmetrics/cyberb/cyberb66.tfm
+INPUT d:/texlive/2022/texmf-dist/fonts/tfm/zhmetrics/cyberb/cyberb67.tfm
 OUTPUT main.thm
 INPUT main.aux
 INPUT ./setup/toc.aux
@@ -1606,6 +1618,9 @@ INPUT body/Servlet.aux
 INPUT body/Servlet.aux
 INPUT ./main.out
 INPUT ./main.out
+INPUT c:/Windows/Fonts/simsun.ttc
+INPUT c:/Windows/Fonts/simsun.ttc
+INPUT c:/Windows/Fonts/simsun.ttc
 INPUT c:/Windows/Fonts/simhei.ttf
 INPUT c:/Windows/Fonts/simsun.ttc
 INPUT c:/Windows/Fonts/simsun.ttc
