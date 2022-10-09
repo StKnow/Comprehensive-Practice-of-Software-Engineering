@@ -8,46 +8,163 @@
 
 本项目需要完成的功能大致分为十一个页面：
 
-1.首页：显示点餐分类信息
+\subsection{首页功能}
+\subsubsection*{\normalsize主要功能}
+显示点餐分类信息
+\subsubsection*{\normalsize动作}
+1.点击点餐分类小图片，跳转到商家列表页面
 
-2. 商家列表页面：根据点餐分类显示商家列表信
-息， 如果处于登录状态，那些需要
-查询购物车中是否有此商家的
-食品。如果有，在页面上显示
-食品数量。
+2.点击下方菜单栏中的“订单”，跳转到历史订单页面
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=5.4cm,height=9.6cm]{figures/3.1.1.png}
+    \caption{首页功能}
+\end{figure}
 
-3.商家详细信息页面：显示商家详细信息及所属食品信
-息，并自动计算总价。
+\subsection{商家列表页面功能}
+\subsubsection*{\normalsize主要功能}
+1.根据点餐分类显示商家列表信息
 
-4.确认订单页面：确认订单信息是否正确；选择送货地址。
+2.如果处于登录状态，那些需要查询购物车中是否有此商家的食品。如果有，在页面上显示食品数量
+\subsubsection*{\normalsize动作}
+点击某个商家，跳转到此商家的详细信息页面
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=5.4cm,height=9.6cm]{figures/3.1.2.png}
+    \caption{商家列表页面功能}
+\end{figure}
 
-5.在线支付页面：显示订单信息及订单明细信息。
+\subsection{商家详细信息页面功能}
+\subsubsection*{\normalsize主要功能}
+显示商家详细信息及所属食品信息，并自动计算总价
+\subsubsection*{\normalsize动作}
+1.点击某食品的 + 按钮，食品数量加 1
 
-6.送货地址页面：显示当前用户的送货地址信息。
+2.点击某食品的 - 按钮，食品数量减 1
 
-7.新增送货地址页面：添加新的送货地址。
+3.点击“去结算”按钮，跳转到确认订单页面
 
-8.编辑送货地址页面：编辑送货地址。
+4.如果没有登录，那么上述三个动作会自动跳转到登录页面
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=5.4cm,height=9.6cm]{figures/3.1.3.png}
+    \caption{商家详细信息页面功能}
+\end{figure}
 
-9.登录页面：用户登录。
+\subsection{确认订单页面功能}
+\subsubsection*{\normalsize主要功能}
+1.确认订单信息是否正确
 
-10.注册页面：注册新用户。
+2.选择送货地址
+\subsubsection*{\normalsize动作}
+1.点击送货地址，跳转到送货地址列表页面
 
-11.历史订单页面：显示用户历史订单信息。~\\
+2.点击“去支付”按钮，跳转到支付页面
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=5.4cm,height=9.6cm]{figures/3.1.4.png}
+    \caption{确认订单页面功能}
+\end{figure}
+
+\subsection{在线支付页面功能}
+\subsubsection*{\normalsize主要功能}
+显示订单信息及订单明细信息
+\subsubsection*{\normalsize动作}
+无（点餐业务流程到此结束）
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=5.4cm,height=9.6cm]{figures/3.1.5.png}
+    \caption{在线支付页面功能}
+\end{figure}
+
+\subsection{送货地址列表页面功能}
+\subsubsection*{\normalsize主要功能}
+显示当前用户的送货地址信息
+\subsubsection*{\normalsize动作}
+1.点击某个送货地址，跳转回确认订单页面
+
+2.点击“新增”按钮，跳转到新增送货地址页面
+
+3.点击“编辑”按钮，跳转到送货地址编辑页面
+
+4.点击“删除”按钮，删除此送货地址
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=5.4cm,height=9.6cm]{figures/3.1.6.png}
+    \caption{送货地址列表页面功能}
+\end{figure}
+
+\subsection{新增送货地址页面功能}
+\subsubsection*{\normalsize主要功能}
+添加新的送货地址
+\subsubsection*{\normalsize动作}
+点击“保存”按钮，添加新的送货地址，并跳转到送货地址列表页面
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=5.4cm,height=9.6cm]{figures/3.1.7.png}
+    \caption{送货地址列表页面功能}
+\end{figure}
+
+\subsection{编辑送货地址页面功能}
+\subsubsection*{\normalsize主要功能}
+编辑送货地址
+\subsubsection*{\normalsize动作}
+点击“更新”按钮，保存编辑后的送货地址，并跳转到送货地址列表页面
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=5.4cm,height=9.6cm]{figures/3.1.8.png}
+    \caption{编辑送货地址页面功能}
+\end{figure}
+
+\subsection{登录页面功能}
+\subsubsection*{\normalsize主要功能}
+用户登录
+\subsubsection*{\normalsize动作}
+1、 点击“登陆”按钮，进行登陆业务处理。如果登陆成功，跳转到上一个页面
+
+2、 点击“去注册”按钮，跳转到注册页面
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=5.4cm,height=9.6cm]{figures/3.1.9.png}
+    \caption{登录页面功能}
+\end{figure}
+
+\subsection{注册页面功能}
+\subsubsection*{\normalsize主要功能}
+注册新用户
+\subsubsection*{\normalsize动作}
+点击“注册”按钮，进行新用户注册。注册成功后，跳转到登陆页面
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=5.4cm,height=9.6cm]{figures/3.1.10.png}
+    \caption{注册页面功能}
+\end{figure}
+
+\subsection{历史订单页面功能}
+\subsubsection*{\normalsize主要功能}
+显示用户历史订单信息
+\subsubsection*{\normalsize动作}
+点击某个历史订单，可以对订单明细信息进行显示和隐藏
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=5.4cm,height=9.6cm]{figures/3.1.11.png}
+    \caption{历史订单页面功能}
+\end{figure}
 
 
 \section{项目设计}
 
-1.数据库设计：
+\subsection{前端设计}
 
+\subsection{数据库设计}
 本项目使用MySQL数据库，选择DataGrip作为开发工具。在数据表的设计上，需要创建商家表、食品表、购物车表、送货地址表、订单表、订单明细表、用户表共七张表。
 \begin{figure}[H]
     \centering
     \includegraphics[width=15cm,height=17cm]{figures/table2.jpg}
     \caption{Servlet项目数据表}
-    \end{figure}
+\end{figure}
 
-2.服务器端设计：
+\subsection{服务器端设计}
 
 
 

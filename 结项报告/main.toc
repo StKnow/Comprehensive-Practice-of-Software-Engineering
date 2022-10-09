@@ -4,7 +4,35 @@
 \ttl@change@v {section}{}{}{}\relax 
 \contentsline {chapter}{\numberline {1}JDBC项目}{1}{section*.3}%
 \contentsline {chapter}{\numberline {2}前端项目}{2}{section*.4}%
-\contentsline {chapter}{\numberline {3}Servlet 项目}{3}{section*.5}%
-\contentsline {section}{\numberline {3.1}项目需求}{3}{section*.6}%
-\contentsline {section}{\numberline {3.2}项目设计}{3}{section*.7}%
+\contentsline {section}{\numberline {2.1}项目需求}{2}{section*.5}%
+\contentsline {subsection}{\numberline {2.1.1}首页功能}{2}{section*.6}%
+\contentsline {subsection}{\numberline {2.1.2}商家列表页面功能}{2}{section*.8}%
+\contentsline {subsection}{\numberline {2.1.3}商家详细信息页面功能}{3}{section*.10}%
+\contentsline {subsection}{\numberline {2.1.4}确认订单页面功能}{4}{section*.12}%
+\contentsline {subsection}{\numberline {2.1.5}在线支付页面功能}{5}{section*.14}%
+\contentsline {subsection}{\numberline {2.1.6}登录页面功能}{6}{section*.16}%
+\contentsline {subsection}{\numberline {2.1.7}注册页面功能}{7}{section*.18}%
+\contentsline {subsection}{\numberline {2.1.8}历史订单页面功能}{8}{section*.20}%
+\contentsline {section}{\numberline {2.2}项目设计}{9}{section*.22}%
+\contentsline {subsection}{\numberline {2.2.1}移动端网页设计}{9}{section*.23}%
+\contentsline {subsection}{\numberline {2.2.2}弹性布局}{9}{section*.24}%
+\contentsline {subsection}{\numberline {2.2.3}视口尺寸}{10}{section*.26}%
+\contentsline {subsection}{\numberline {2.2.4}边框盒子模型}{10}{section*.27}%
+\contentsline {chapter}{\numberline {3}Servlet 项目}{11}{section*.28}%
+\contentsline {section}{\numberline {3.1}项目需求}{11}{section*.29}%
+\contentsline {subsection}{\numberline {3.1.1}首页功能}{11}{section*.30}%
+\contentsline {subsection}{\numberline {3.1.2}商家列表页面功能}{11}{section*.32}%
+\contentsline {subsection}{\numberline {3.1.3}商家详细信息页面功能}{12}{section*.34}%
+\contentsline {subsection}{\numberline {3.1.4}确认订单页面功能}{13}{section*.36}%
+\contentsline {subsection}{\numberline {3.1.5}在线支付页面功能}{14}{section*.38}%
+\contentsline {subsection}{\numberline {3.1.6}送货地址列表页面功能}{15}{section*.40}%
+\contentsline {subsection}{\numberline {3.1.7}新增送货地址页面功能}{16}{section*.42}%
+\contentsline {subsection}{\numberline {3.1.8}编辑送货地址页面功能}{17}{section*.44}%
+\contentsline {subsection}{\numberline {3.1.9}登录页面功能}{18}{section*.46}%
+\contentsline {subsection}{\numberline {3.1.10}注册页面功能}{19}{section*.48}%
+\contentsline {subsection}{\numberline {3.1.11}历史订单页面功能}{20}{section*.50}%
+\contentsline {section}{\numberline {3.2}项目设计}{21}{section*.52}%
+\contentsline {subsection}{\numberline {3.2.1}前端设计}{21}{section*.53}%
+\contentsline {subsection}{\numberline {3.2.2}数据库设计}{21}{section*.54}%
+\contentsline {subsection}{\numberline {3.2.3}服务器端设计}{22}{section*.56}%
 \contentsfinish 
