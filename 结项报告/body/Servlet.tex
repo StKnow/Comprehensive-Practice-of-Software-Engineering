@@ -6,7 +6,7 @@
 
 本项目要求使用VUE+Servlet+AJAX技术，开发前后端分离的饿了么Web应用程序。主要设计参照 “饿了么官网网页版”制作，并且仅关注点餐业务线功能，“饿了么官网”中的其它功能暂不涉及。
 
-本项目需要完成的功能大致分为十一个页面：~\\
+本项目需要完成的功能大致分为十一个页面:~\\
 
 \subsection{首页功能}
 \subsubsection*{\normalsize主要功能}
@@ -14,7 +14,7 @@
 \subsubsection*{\normalsize动作}
 1.点击点餐分类小图片，跳转到商家列表页面
 
-2.点击下方菜单栏中的“订单”，跳转到历史订单页面
+2.点击下方菜单栏中的“订单”，跳转到历史订单页面~\\
 
 \subsection{商家列表页面功能}
 \subsubsection*{\normalsize主要功能}
@@ -22,7 +22,7 @@
 
 2.如果处于登录状态，那些需要查询购物车中是否有此商家的食品。如果有，在页面上显示食品数量
 \subsubsection*{\normalsize动作}
-点击某个商家，跳转到此商家的详细信息页面
+点击某个商家，跳转到此商家的详细信息页面~\\
 
 \subsection{商家详细信息页面功能}
 \subsubsection*{\normalsize主要功能}
@@ -34,7 +34,7 @@
 
 3.点击“去结算”按钮，跳转到确认订单页面
 
-4.如果没有登录，那么上述三个动作会自动跳转到登录页面
+4.如果没有登录，那么上述三个动作会自动跳转到登录页面~\\
 
 \subsection{确认订单页面功能}
 \subsubsection*{\normalsize主要功能}
@@ -44,13 +44,13 @@
 \subsubsection*{\normalsize动作}
 1.点击送货地址，跳转到送货地址列表页面
 
-2.点击“去支付”按钮，跳转到支付页面
+2.点击“去支付”按钮，跳转到支付页面~\\
 
 \subsection{在线支付页面功能}
 \subsubsection*{\normalsize主要功能}
 显示订单信息及订单明细信息
 \subsubsection*{\normalsize动作}
-无（点餐业务流程到此结束）
+无（点餐业务流程到此结束）~\\
 
 \subsection{送货地址列表页面功能}
 \subsubsection*{\normalsize主要功能}
@@ -62,19 +62,19 @@
 
 3.点击“编辑”按钮，跳转到送货地址编辑页面
 
-4.点击“删除”按钮，删除此送货地址
+4.点击“删除”按钮，删除此送货地址~\\
 
 \subsection{新增送货地址页面功能}
 \subsubsection*{\normalsize主要功能}
 添加新的送货地址
 \subsubsection*{\normalsize动作}
-点击“保存”按钮，添加新的送货地址，并跳转到送货地址列表页面
+点击“保存”按钮，添加新的送货地址，并跳转到送货地址列表页面~\\
 
 \subsection{编辑送货地址页面功能}
 \subsubsection*{\normalsize主要功能}
 编辑送货地址
 \subsubsection*{\normalsize动作}
-点击“更新”按钮，保存编辑后的送货地址，并跳转到送货地址列表页面
+点击“更新”按钮，保存编辑后的送货地址，并跳转到送货地址列表页面~\\
 
 \subsection{登录页面功能}
 \subsubsection*{\normalsize主要功能}
@@ -82,13 +82,13 @@
 \subsubsection*{\normalsize动作}
 1、 点击“登陆”按钮，进行登陆业务处理。如果登陆成功，跳转到上一个页面
 
-2、 点击“去注册”按钮，跳转到注册页面
+2、 点击“去注册”按钮，跳转到注册页面~\\
 
 \subsection{注册页面功能}
 \subsubsection*{\normalsize主要功能}
 注册新用户
 \subsubsection*{\normalsize动作}
-点击“注册”按钮，进行新用户注册。注册成功后，跳转到登陆页面
+点击“注册”按钮，进行新用户注册。注册成功后，跳转到登陆页面~\\
 
 \subsection{历史订单页面功能}
 \subsubsection*{\normalsize主要功能}
@@ -145,7 +145,7 @@
 添加main.js文件，用于判断每个页面是否需要登录才可以使用。
 添加App.vue文件，里面设置全局的共通样式。
 
-最后实现各个组件：主页、商家列表、商家详细信息、订单、支付、添加修改用户地址、历史订单、登录、注册和底部导航栏共同组件。
+最后实现各个组件：主页、商家列表、商家详细信息、订单、支付、添加修改用户地址、历史订单、登录、注册和底部导航栏共同组件。~\\
 
 \subsection{数据库设计}
 本项目使用MySQL数据库，选择DataGrip作为开发工具。在数据表的设计上，需要创建商家表、食品表、购物车表、送货地址表、订单表、订单明细表、用户表共七张表。
@@ -156,9 +156,23 @@
     \caption{Servlet项目数据表}
 \end{figure}
 
-\subsection{服务端设计}
+\subsection{Servlet后端设计}
+
 \noindent
-一. 开发技术
+一. 开发环境
+
+1. 开发工具：IDEA、DataGrip
+
+2. 检查IDEA的jdk配置：jdk8
+
+3. 检查IDEA的tomcat配置：tomcat 9.0.65
+
+4. 检查IDEA的文件编码配置：utf-8
+
+5. 检查MySQL配置：MySQL 8.0.30
+
+\noindent
+二. 开发技术
 
 本项目为JavaWeb项目，在后端使用Servlet技术，Tomcat作为容器进行项目开发。在JavaWeb工程的搭建方面，本项目使用基于Servlet的简易MVC架构，能够很好地解决后端与前端地交互。在响应前端请求方面，使用Jackson将java对象或集合转换为json对象或数组后，返回前端。
 
@@ -169,12 +183,12 @@
 \end{figure}
 
 \noindent
-二. 跨域问题解决
+三. 跨域问题解决
 
 本项目使用CORS解决前后端分离开发模式时的跨域问题，它允许浏览器向跨源服务器，发出XMLHttpRequest请求，从而克服了AJAX只能同源使用的限制。实现CORS通信的关键是服务器，只要服务器实现了CORS接口，就可以跨源通信。~\\
 
 \noindent
-三. 事务处理解决
+四. 事务处理解决
 
 本项目将事务的处理放在Service层：
 
@@ -193,7 +207,7 @@
 \end{figure}
 
 \noindent
-四. 项目结构
+五. 项目结构
 
 本项目主要结构由上到下分为Controller层、Service层、Dao层三层架构：Controller层主要负责与客户端进行交互，接收并响应前端请求；Service层主要负责处理需要实现的业务逻辑；Dao层主要负责对于数据库的操作。
 
@@ -206,7 +220,179 @@
 \end{figure}
 
 \noindent
-五. 服务器接口API
-1.
+六. 服务器接口API
 
+1. Business
+
+1.1 BusinessController/listBusinessByOrderTypeId 
+
+参数：orderTypeId 
+
+返回值：business数组
+
+功能：根据点餐分类编号查询所属商家信息
+
+1.2 BusinessController/getBusinessById 
+
+参数：businessId 
+
+返回值：business对象
+
+功能：根据商家编号查询商家信息~\\
+
+2. Food
+
+2.1 FoodController/listFoodByBusinessId 
+
+参数：businessId 
+
+返回值：food数组
+
+功能：根据商家编号查询所属食品信息~\\
+
+3. Cart
+
+3.1 CartController/listCart 
+参数：userId、businessId（可选）
+
+返回值：cart数组（多对一：所属商家信息、所属食品信息）
+
+功能：根据用户编号查询此用户所有购物车信息
+
+\qquad\quad根据用户编号和商家编号，查询此用户购物车中某个商家的所有购物车信息
+
+3.2 CartController/saveCart 
+
+参数：userId、businessId、foodId 
+
+返回值：int（影响的行数）
+
+功能：向购物车表中添加一条记录
+
+3.3 CartController/updateCart 
+
+参数：userId、businessId、foodId、quantity
+
+返回值：int（影响的行数）
+
+功能：根据用户编号、商家编号、食品编号更新数量
+
+3.4 CartController/removeCart 
+
+参数：userId、businessId、foodId（可选）
+
+返回值：int（影响的行数）
+
+功能：根据用户编号、商家编号、食品编号删除购物车表中的一条食品记录
+
+\qquad\quad根据用户编号、商家编号删除购物车表中的多条条记录~\\
+
+4. DeliveryAddress
+
+1. DeliveryAddressController/listDeliveryAddressByUserId 
+
+参数：userId 
+
+返回值：deliveryAddress数组
+
+功能：根据用户编号查询所属送货地址
+
+2. DeliveryAddressController/getDeliveryAddressById 
+
+参数：daId 
+
+返回值：deliveryAddress对象
+
+功能：根据送货地址编号查询送货地址
+
+3. DeliveryAddressController/saveDeliveryAddress 
+
+参数：contactName、contactSex、contactTel、address、userId 
+
+返回值：int（影响的行数）
+
+功能：向送货地址表中添加一条记录
+
+4. DeliveryAddressController/updateDeliveryAddress
+
+参数：daId、contactName、contactSex、contactTel、address、userId
+
+返回值：int（影响的行数）
+
+功能：根据送货地址编号更新送货地址信息
+
+5. DeliveryAddressController/removeDeliveryAddress 
+
+参数：daId 
+
+返回值：int（影响的行数）
+
+功能：根据送货地址编号删除一条记录~\\
+
+6. Orders
+
+1. OrdersController/createOrders 
+
+参数：userId、businessId、daId、orderTotal 
+
+返回值：int（订单编号）
+
+功能：根据用户编号、商家编号、订单总金额、送货地址编号向订单表中添加一条记录，
+
+\qquad\quad并获取自动生成的订单编号，
+
+\qquad\quad然后根据用户编号、商家编号从购物车表中查询所有数据，批量添加到订单明细表中，
+
+\qquad\quad然后根据用户编号、商家编号删除购物车表中的数据。
+
+2. OrdersController/getOrdersById 
+
+参数：orderId 
+
+返回值：orders对象（包括多对一：商家信息； 一对多：订单明细信息）
+
+功能：根据订单编号查询订单信息，包括所属商家信息，和此订单的所有订单明细信息
+
+3. OrdersController/listOrdersByUserId 
+
+参数：userId 
+
+返回值：orders数组（包括多对一：商家信息； 一对多：订单明细信息）
+
+功能：根据用户编号查询此用户的所有订单信息~\\
+
+7. User
+
+1. UserController/getUserByIdByPass 
+
+参数：userId、password 
+
+返回值：user对象
+
+功能：根据用户编号与密码查询用户信息
+
+2. UserController/getUserById 
+
+参数：userId 
+
+返回值：int（返回行数）
+
+功能：根据用户编号查询用户表返回的行数
+
+3. UserController/saveUser 
+
+参数：userId、password、userName、userSex
+
+返回值：int（影响的行数）
+
+功能：向用户表中添加一条记录~\\
+
+\noindent
+七. 业务流程
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{figures/flowchart.png}
+    \caption{业务流程图}
+\end{figure}
 
