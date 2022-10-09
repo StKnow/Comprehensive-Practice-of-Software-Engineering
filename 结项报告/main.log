@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.27)  27 SEP 2022 14:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.27)  7 OCT 2022 16:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/Desktop/软件工程综合实践/项目/结项报告/main.tex
-(d:/Desktop/软件工程综合实践/项目/结项报告/main.tex
+**d:/程序设计综合实践项目/结项报告/main.tex
+(d:/程序设计综合实践项目/结项报告/main.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (d:/texlive/2022/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
@@ -572,6 +572,13 @@ Package ntheorem Info: option `amsmath' handling for `thmmarks' loaded on input 
 Package: CJKnumb 2021/10/16 4.8.5
 \CJK@q=\count312
 \CJK@r=\count313
+) (d:/texlive/2022/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count314
+\float@exts=\toks48
+\float@box=\box64
+\@float@everytoks=\toks49
+\@floatcapt=\box65
 ) (d:/texlive/2022/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
  (d:/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -589,23 +596,23 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 ) (d:/texlive/2022/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count314
-\lst@gtempboxa=\box64
-\lst@token=\toks48
-\lst@length=\count315
+\lst@mode=\count315
+\lst@gtempboxa=\box66
+\lst@token=\toks50
+\lst@length=\count316
 \lst@currlwidth=\dimen256
-\lst@column=\count316
-\lst@pos=\count317
+\lst@column=\count317
+\lst@pos=\count318
 \lst@lostspace=\dimen257
 \lst@width=\dimen258
-\lst@newlines=\count318
-\lst@lineno=\count319
+\lst@newlines=\count319
+\lst@lineno=\count320
 \lst@maxwidth=\dimen259
  (d:/texlive/2022/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count320
-\lst@skipnumbers=\count321
-\lst@framebox=\box65
+\c@lstnumber=\count321
+\lst@skipnumbers=\count322
+\lst@framebox=\box67
 ) (d:/texlive/2022/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
@@ -616,11 +623,11 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 ) (d:/texlive/2022/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count322
+\c@AlgoLine=\count323
 \algocf@hangindent=\skip98
  (d:/texlive/2022/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count323
+\c@checkoddpage=\count324
 ) (d:/texlive/2022/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 ) (d:/texlive/2022/texmf-dist/tex/latex/relsize/relsize.sty
@@ -641,32 +648,32 @@ Package: relsize 2013/03/29 ver 4.1
 \interspacealgoruled=\dimen264
 \interspacetitleboxruled=\dimen265
 \algocf@ruledwidth=\skip107
-\algocf@inoutbox=\box66
-\algocf@inputbox=\box67
+\algocf@inoutbox=\box68
+\algocf@inputbox=\box69
 \AlCapSkip=\skip108
 \AlCapHSkip=\skip109
 \algoskipindent=\skip110
-\algocf@nlbox=\box68
-\algocf@hangingbox=\box69
-\algocf@untilbox=\box70
+\algocf@nlbox=\box70
+\algocf@hangingbox=\box71
+\algocf@untilbox=\box72
 \algocf@skipuntil=\skip111
-\algocf@capbox=\box71
+\algocf@capbox=\box73
 \algocf@lcaptionbox=\skip112
 \algoheightruledefault=\skip113
 \algoheightrule=\skip114
 \algotitleheightruledefault=\skip115
 \algotitleheightrule=\skip116
-\c@algocfline=\count324
-\c@algocfproc=\count325
-\c@algocf=\count326
-\algocf@algoframe=\box72
-\algocf@algobox=\box73
+\c@algocfline=\count325
+\c@algocfproc=\count326
+\c@algocf=\count327
+\algocf@algoframe=\box74
+\algocf@algobox=\box75
 ) (d:/texlive/2022/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count327
-\c@ALC@line=\count328
-\c@ALC@rem=\count329
-\c@ALC@depth=\count330
+\c@ALC@unique=\count328
+\c@ALC@line=\count329
+\c@ALC@rem=\count330
+\c@ALC@depth=\count331
 \ALC@tlm=\skip117
 \algorithmicindent=\skip118
 ) (d:/texlive/2022/texmf-dist/tex/latex/cmap/cmap.sty
@@ -703,8 +710,8 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen266
-\Hy@linkcounter=\count331
-\Hy@pagecounter=\count332
+\Hy@linkcounter=\count332
+\Hy@pagecounter=\count333
  (d:/texlive/2022/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2022-02-21 v7.00n Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -714,7 +721,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (d:/texlive/2022/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count333
+\Hy@SavedSpaceFactor=\count334
  (d:/texlive/2022/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2022-02-21 v7.00n Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -728,7 +735,7 @@ Package hyperref Info: Plain pages OFF on input line 4152.
 Package hyperref Info: Backreferencing OFF on input line 4157.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4390.
-\c@Hy@tempcnt=\count334
+\c@Hy@tempcnt=\count335
  (d:/texlive/2022/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -740,7 +747,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (d:/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count335
+\Fld@menulength=\count336
 \Field@Width=\dimen268
 \Fld@charsize=\dimen269
 Package hyperref Info: Hyper figures OFF on input line 6027.
@@ -756,9 +763,9 @@ LaTeX Info: Redefining \pageref on input line 6101.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count336
-\c@Item=\count337
-\c@Hfootnote=\count338
+\Hy@abspage=\count337
+\c@Item=\count338
+\c@Hfootnote=\count339
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (d:/texlive/2022/texmf-dist/tex/latex/hyperref/hpdftex.def
@@ -767,8 +774,8 @@ File: hpdftex.def 2022-02-21 v7.00n Hyperref driver for pdfTeX
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count339
-\c@bookmark@seq@number=\count340
+\Fld@listcount=\count340
+\c@bookmark@seq@number=\count341
  (d:/texlive/2022/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
  (d:/texlive/2022/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -794,7 +801,7 @@ File: ot1txr.fd 2000/12/15 v3.1
 LaTeX Warning: Unused global option(s):
     [ctexartutf8].
 
-(./main.aux (./setup/toc.aux))
+(./main.aux (./setup/toc.aux) (./body/JDBC.aux) (./body/front-end.aux) (./body/Servlet.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 9.
@@ -897,17 +904,17 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
  (d:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count341
+\scratchcounter=\count342
 \scratchdimen=\dimen270
-\scratchbox=\box74
-\nofMPsegments=\count342
-\nofMParguments=\count343
-\everyMPshowfont=\toks49
-\MPscratchCnt=\count344
+\scratchbox=\box76
+\nofMPsegments=\count343
+\nofMParguments=\count344
+\everyMPshowfont=\toks51
+\MPscratchCnt=\count345
 \MPscratchDim=\dimen271
-\MPnumerator=\count345
-\makeMPintoPDFobject=\count346
-\everyMPtoPDFconversion=\toks50
+\MPnumerator=\count346
+\makeMPintoPDFobject=\count347
+\everyMPtoPDFconversion=\toks52
 ) (d:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -951,7 +958,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Option `squaren' provided! 
  Command \squaren defined by SIunits package!
 
-\c@lstlisting=\count347
+\c@lstlisting=\count348
 Package hyperref Info: Link coloring OFF on input line 9.
 (d:/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -960,7 +967,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (d:/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count348
+\c@section@level=\count349
 )
 LaTeX Info: Redefining \ref on input line 9.
 LaTeX Info: Redefining \pageref on input line 9.
@@ -970,40 +977,40 @@ LaTeX Info: Redefining \nameref on input line 9.
 \openout3 = `main.out'.
 
  (./setup/format.tex
-\c@pubctr=\count349
-\c@currtheoremctr=\count350
-\c@endtheoremctr=\count351
-\c@theorem=\count352
-\c@currlemmactr=\count353
-\c@endlemmactr=\count354
-\c@lemma=\count355
-\c@curraxiomctr=\count356
-\c@endaxiomctr=\count357
-\c@axiom=\count358
-\c@currpropositionctr=\count359
-\c@endpropositionctr=\count360
-\c@proposition=\count361
-\c@currpropctr=\count362
-\c@endpropctr=\count363
-\c@prop=\count364
-\c@currcorollaryctr=\count365
-\c@endcorollaryctr=\count366
-\c@corollary=\count367
-\c@currdefinitionctr=\count368
-\c@enddefinitionctr=\count369
-\c@definition=\count370
-\c@currconjecturectr=\count371
-\c@endconjecturectr=\count372
-\c@conjecture=\count373
-\c@currexamplectr=\count374
-\c@endexamplectr=\count375
-\c@example=\count376
-\c@currremarkctr=\count377
-\c@endremarkctr=\count378
-\c@remark=\count379
+\c@pubctr=\count350
+\c@currtheoremctr=\count351
+\c@endtheoremctr=\count352
+\c@theorem=\count353
+\c@currlemmactr=\count354
+\c@endlemmactr=\count355
+\c@lemma=\count356
+\c@curraxiomctr=\count357
+\c@endaxiomctr=\count358
+\c@axiom=\count359
+\c@currpropositionctr=\count360
+\c@endpropositionctr=\count361
+\c@proposition=\count362
+\c@currpropctr=\count363
+\c@endpropctr=\count364
+\c@prop=\count365
+\c@currcorollaryctr=\count366
+\c@endcorollaryctr=\count367
+\c@corollary=\count368
+\c@currdefinitionctr=\count369
+\c@enddefinitionctr=\count370
+\c@definition=\count371
+\c@currconjecturectr=\count372
+\c@endconjecturectr=\count373
+\c@conjecture=\count374
+\c@currexamplectr=\count375
+\c@endexamplectr=\count376
+\c@example=\count377
+\c@currremarkctr=\count378
+\c@endremarkctr=\count379
+\c@remark=\count380
 \@title@width=\skip120
 ) (./setup/info.tex)
-<figures/tju.pdf, id=13, 301.125pt x 85.31876pt>
+<figures/tju.pdf, id=33, 301.125pt x 85.31876pt>
 File: figures/tju.pdf Graphic file (type pdf)
 <use figures/tju.pdf>
 Package pdftex.def Info: figures/tju.pdf  used on input line 20.
@@ -1014,7 +1021,7 @@ LaTeX Font Info:    Trying to load font information for C70+hei on input line 20
  (d:/texlive/2022/texmf-dist/tex/latex/zhmetrics/c70hei.fd
 File: c70hei.fd 2009/09/23 4.8.2
 )
-<figures/Tjulogo.pdf, id=23, 102.26205pt x 102.26205pt>
+<figures/Tjulogo.pdf, id=43, 102.26205pt x 102.26205pt>
 File: figures/Tjulogo.pdf Graphic file (type pdf)
 <use figures/Tjulogo.pdf>
 Package pdftex.def Info: figures/Tjulogo.pdf  used on input line 20.
@@ -1061,7 +1068,27 @@ File: ctex-zhmap-windows.tex 2021/12/12 v2.5.8 Windows font map loader for pdfTe
  <./figures/tju.pdf> <./figures/Tjulogo.pdf>]
 \openout2 = `setup/toc.aux'.
 
- (./setup/toc.tex (./main.toc)
+ (./setup/toc.tex (./main.toc
+LaTeX Font Info:    Calculating math sizes for size <15> on input line 5.
+
+
+LaTeX Font Warning: Font shape `OML/eur/m/n' in size <15> not available
+(Font)              size <14.4> substituted on input line 5.
+
+
+LaTeX Font Warning: Font shape `OML/eur/m/n' in size <10.49995> not available
+(Font)              size <10.95> substituted on input line 5.
+
+
+LaTeX Font Warning: Font shape `OML/eur/m/n' in size <7.5> not available
+(Font)              size <7> substituted on input line 5.
+
+LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5.
+(d:/texlive/2022/texmf-dist/tex/latex/txfonts/ts1txr.fd
+File: ts1txr.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 8.
+)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
@@ -1076,10 +1103,61 @@ l.22     \include{setup/toc}
 
 
 ]
+\openout2 = `body/JDBC.aux'.
+
+ (./body/JDBC.tex
+第\CJKnumber {1}章 1.
+)
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.38     \include{body/JDBC}
+                             [1
+
+
+
+
+
+]
+\openout2 = `body/front-end.aux'.
+
+ (./body/front-end.tex
+第\CJKnumber {2}章 2.
+) [2
+
+
+
+
+]
+\openout2 = `body/Servlet.aux'.
+
+ (./body/Servlet.tex
+第\CJKnumber {3}章 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+<figures/table2.jpg, id=186, 899.36pt x 1019.81pt>
+File: figures/table2.jpg Graphic file (type jpg)
+<use figures/table2.jpg>
+Package pdftex.def Info: figures/table2.jpg  used on input line 46.
+(pdftex.def)             Requested size: 426.78874pt x 483.69897pt.
+
+Overfull \hbox (9.67131pt too wide) in paragraph at lines 46--47
+ [][] 
+ []
+
+[3
+
+
+
+
+]) [4 <./figures/table2.jpg>]
 \tf@thm=\write5
 \openout5 = `main.thm'.
 
- (./main.aux (./setup/toc.aux))
+ (./main.aux (./setup/toc.aux) (./body/JDBC.aux) (./body/front-end.aux) (./body/Servlet.aux))
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.28pt have occurred.
@@ -1088,21 +1166,21 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 407E30044D7DD0F74C7B6B3258410CFE;157.
+(rerunfilecheck)             Checksum: AD8414D60B659E363DB7091069A0ABE3;615.
  ) 
 Here is how much of TeX's memory you used:
- 20883 strings out of 480175
- 331997 string characters out of 5894362
- 668334 words of memory out of 5000000
- 38261 multiletter control sequences out of 15000+600000
- 501777 words of font info for 122 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
- 80i,11n,81p,849b,1223s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{d:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><d:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><d:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (2 pages, 459577 bytes).
+ 21959 strings out of 478268
+ 349044 string characters out of 5850345
+ 683650 words of memory out of 5000000
+ 39306 multiletter control sequences out of 15000+600000
+ 564654 words of font info for 316 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 80i,11n,81p,840b,1350s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc>{d:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><d:/texlive/2022/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb><d:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><d:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on main.pdf (6 pages, 887423 bytes).
 PDF statistics:
- 236 PDF objects out of 1000 (max. 8388607)
- 146 compressed objects within 2 object streams
- 6 named destinations out of 1000 (max. 500000)
- 155 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 465 PDF objects out of 1000 (max. 8388607)
+ 300 compressed objects within 3 object streams
+ 20 named destinations out of 1000 (max. 500000)
+ 308 words of extra memory for PDF output out of 10000 (max. 10000000)
 

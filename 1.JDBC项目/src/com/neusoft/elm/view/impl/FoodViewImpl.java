@@ -18,7 +18,6 @@ public class FoodViewImpl implements FoodView {
         List<Food> list = dao.listFoodByBusinessId(businessId);
         System.out.println("食品编号\t食品名称\t食品介绍\t食品价格");
         for (Food food : list) {
-
             System.out.println(food.getFoodId() + "\t" + food.getFoodName() + "\t" + food.getFoodExplain() + "\t" + food
                     .getFoodPrice());
         }
