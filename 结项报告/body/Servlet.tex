@@ -169,7 +169,7 @@
 
 4. 检查IDEA的文件编码配置：utf-8
 
-5. 检查MySQL配置：MySQL 8.0.30
+5. 检查MySQL配置：MySQL 8.0.30~\\
 
 \noindent
 二. 开发技术
@@ -289,7 +289,7 @@
 
 4. DeliveryAddress
 
-1. DeliveryAddressController/listDeliveryAddressByUserId 
+4.1 DeliveryAddressController/listDeliveryAddressByUserId 
 
 参数：userId 
 
@@ -297,7 +297,7 @@
 
 功能：根据用户编号查询所属送货地址
 
-2. DeliveryAddressController/getDeliveryAddressById 
+4.2 DeliveryAddressController/getDeliveryAddressById 
 
 参数：daId 
 
@@ -305,7 +305,7 @@
 
 功能：根据送货地址编号查询送货地址
 
-3. DeliveryAddressController/saveDeliveryAddress 
+4.3 DeliveryAddressController/saveDeliveryAddress 
 
 参数：contactName、contactSex、contactTel、address、userId 
 
@@ -313,7 +313,7 @@
 
 功能：向送货地址表中添加一条记录
 
-4. DeliveryAddressController/updateDeliveryAddress
+4.4 DeliveryAddressController/updateDeliveryAddress
 
 参数：daId、contactName、contactSex、contactTel、address、userId
 
@@ -321,7 +321,7 @@
 
 功能：根据送货地址编号更新送货地址信息
 
-5. DeliveryAddressController/removeDeliveryAddress 
+4.5 DeliveryAddressController/removeDeliveryAddress 
 
 参数：daId 
 
@@ -329,9 +329,9 @@
 
 功能：根据送货地址编号删除一条记录~\\
 
-6. Orders
+5. Orders
 
-1. OrdersController/createOrders 
+5.1 OrdersController/createOrders 
 
 参数：userId、businessId、daId、orderTotal 
 
@@ -345,7 +345,7 @@
 
 \qquad\quad然后根据用户编号、商家编号删除购物车表中的数据。
 
-2. OrdersController/getOrdersById 
+5.2 OrdersController/getOrdersById 
 
 参数：orderId 
 
@@ -353,7 +353,7 @@
 
 功能：根据订单编号查询订单信息，包括所属商家信息，和此订单的所有订单明细信息
 
-3. OrdersController/listOrdersByUserId 
+5.3 OrdersController/listOrdersByUserId 
 
 参数：userId 
 
@@ -361,9 +361,9 @@
 
 功能：根据用户编号查询此用户的所有订单信息~\\
 
-7. User
+6. User
 
-1. UserController/getUserByIdByPass 
+6.1 UserController/getUserByIdByPass 
 
 参数：userId、password 
 
@@ -371,7 +371,7 @@
 
 功能：根据用户编号与密码查询用户信息
 
-2. UserController/getUserById 
+6.2 UserController/getUserById 
 
 参数：userId 
 
@@ -379,7 +379,7 @@
 
 功能：根据用户编号查询用户表返回的行数
 
-3. UserController/saveUser 
+6.3 UserController/saveUser 
 
 参数：userId、password、userName、userSex
 

@@ -10,13 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0828375-4b1a-49de-b386-ea2d48dd2902" name="变更" comment="Servlet 文件修复">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../结项报告/body/Newfeatures.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../结项报告/body/Newfeatures.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../结项报告/body/Servlet.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../结项报告/body/Servlet.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../结项报告/main.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../../结项报告/main.aux" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../结项报告/main.fdb_latexmk" beforeDir="false" afterPath="$PROJECT_DIR$/../../结项报告/main.fdb_latexmk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../结项报告/main.fls" beforeDir="false" afterPath="$PROJECT_DIR$/../../结项报告/main.fls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../结项报告/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../结项报告/main.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../结项报告/main.out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../结项报告/main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../结项报告/main.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../结项报告/main.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../../结项报告/main.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../结项报告/main.synctex.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../结项报告/main.toc" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +217,8 @@
       <workItem from="1664162662425" duration="62000" />
       <workItem from="1664886651665" duration="853000" />
       <workItem from="1665037231351" duration="1778000" />
-      <workItem from="1665287263132" duration="642000" />
+      <workItem from="1665287263132" duration="2478000" />
+      <workItem from="1665384339975" duration="767000" />
     </task>
     <task id="LOCAL-00001" summary="Servlet seventh commit">
       <created>1662393337262</created>
