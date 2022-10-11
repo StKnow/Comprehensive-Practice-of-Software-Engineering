@@ -1948,6 +1948,11 @@ INPUT body/SpringBoot.tex
 INPUT ./body/SpringBoot.tex
 INPUT body/SpringBoot.tex
 INPUT d:/texlive/2022/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei56.tfm
+INPUT ./figures/structure4.png
+INPUT ./figures/structure4.png
+INPUT figures/structure4.png
+INPUT ./figures/structure4.png
+INPUT ./figures/structure4.png
 INPUT ./figures/flowchart.png
 INPUT ./figures/flowchart.png
 INPUT figures/flowchart.png
