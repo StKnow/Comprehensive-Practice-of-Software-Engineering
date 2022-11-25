@@ -31,13 +31,9 @@
     </ul>
     <!-- 支付方式部分 -->
     <ul class="payment-type">
-      <li>
-        <img src="../assets/alipay.png" />
-        <i class="fa fa-check-circle"></i>
-      </li>
-      <li>
-        <img src="../assets/wechat.png" />
-      </li>
+      <input type="radio" style="width: 6vw; height: 4.5vw" name="支付方式" v-model="payMethod" value="0">支付宝支付</input><br />
+      <input type="radio" style="width: 6vw; height: 4.5vw" name="支付方式" v-model="payMethod" value="1">微信支付</input><br />
+      <input type="radio" style="width: 6vw; height: 4.5vw" name="支付方式" v-model="payMethod" value="2">钱包余额支付</input>
     </ul>
     <div class="payment-button">
       <button @click="payment">确认支付</button>
@@ -47,6 +43,7 @@
   </div>
 </template>
 <script>
+import Index from "../../../../../4.SpringBoot项目/前端部分/elmclient/src/views/Index.vue";
 import Footer from "../components/Footer.vue";
 export default {
   name: "Payment",
@@ -58,9 +55,14 @@ export default {
       },
       grade: 0,
       isShowDetailet: false,
+      payMethod: 0,
+      user: {},
+      balance,
+      orderTotal,
     };
   },
   created() {
+    this.user = this.$getSessionStorage("user");
     this.$axios
       .post(
         "OrdersController/getOrdersById",
@@ -107,29 +109,99 @@ export default {
       this.isShowDetailet = !this.isShowDetailet;
     },
     payment() {
-      this.$axios
-        .post(
-          "OrdersController/payOrders",
-          this.$qs.stringify({
-            orderId: this.orderId,
+      if (this.payMethod == 2) {
+        this.$axios
+          .post(
+            "WalletController/getBalanceById",
+            this.$qs.stringify(this.user)
+          )
+          .then((response) => {
+            this.balance = response.data;
           })
-        )
-        .then((response) => {
-          if (response.data > 0) {
-            alert("支付订单成功！");
-            this.$router.go(-1);
-          } else {
-            alert("支付订单失败！");
-          }
-        })
-        .catch((error) => {
-          console.error(error);
-        });
+          .catch((error) => {
+            console.error(error);
+          });
+
+        this.$axios
+          .post(
+            "OrderController/getPriceByOrderId",
+            this.$qs.stringify(this.user)
+          )
+          .then((response) => {
+            this.orderTotal = response.data;
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+
+        if (this.balance < orderTotal) {
+          this.$axios
+            .post(
+              "WalletController/minusAmount",
+              this.$qs.stringify({
+                user: this.user,
+                price: this.orderTotal,
+              })
+            )
+            .then((response) => {
+              if (response.data > 0) {
+                alert("余额扣除成功！");
+              } else {
+                alert("余额扣除失败！");
+              }
+            })
+            .catch((error) => {
+              console.error(error);
+            });
+
+          this.$axios
+            .post(
+              "OrdersController/payOrders",
+              this.$qs.stringify({
+                orderId: this.orderId,
+              })
+            )
+            .then((response) => {
+              if (response.data > 0) {
+                alert("支付订单成功！");
+                this.$router.go(-1);
+              } else {
+                alert("支付订单失败！");
+              }
+            })
+            .catch((error) => {
+              console.error(error);
+            });
+        } else {
+          alert("钱包余额不足");
+        }
+      } else {
+        this.$axios
+          .post(
+            "OrdersController/payOrders",
+            this.$qs.stringify({
+              orderId: this.orderId,
+            })
+          )
+          .then((response) => {
+            if (response.data > 0) {
+              alert("支付订单成功！");
+              this.$router.go(-1);
+            } else {
+              alert("支付订单失败！");
+            }
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+      }
     },
   },
   components: {
     Footer,
   },
+
+  Index,
 };
 </script>
 <style scoped>

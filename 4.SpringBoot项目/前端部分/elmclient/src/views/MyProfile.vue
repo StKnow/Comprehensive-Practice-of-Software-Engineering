@@ -7,10 +7,13 @@
       </div>
       <div class="usernameandid">
         <p class="username">
-          {{ user.userName }}{{ user.userSex | sexFilter }}
+          <!-- {{ user.userName }}{{ user.userSex | sexFilter }} -->
+          周先生 男
         </p>
-        <p class="userid">尊贵的{{ grade | gradeNameFilter }}会员</p>
-        <p class="userid">{{ user.userId }}</p>
+        <!-- <p class="userid">尊贵的{{ grade | gradeNameFilter }}会员</p> -->
+        <p class="userid">尊贵的白银会员</p>
+        <!-- <p class="userid">{{ user.userId }}</p> -->
+        <p class="userid">{{ 123 }}</p>
       </div>
     </div>
     <div class="littleitem">
@@ -33,6 +36,19 @@
         </aside>
         <div class="word" @click="toMembershipRegister">
           注册会员
+          <span class="right">
+            <img src="../assets/向右.png" alt="向右" />
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="littleitem">
+      <div class="littleitembutton">
+        <aside class="littleitemimg">
+          <img src="../assets/钱包.png" alt="钱包" />
+        </aside>
+        <div class="word" @click="toMyWallet">
+          我的钱包
           <span class="right">
             <img src="../assets/向右.png" alt="向右" />
           </span>
@@ -90,6 +106,11 @@ export default {
     toMembershipRegister() {
       this.$router.push({
         path: "/membershipRegister",
+      });
+    },
+    toMyWallet() {
+      this.$router.push({
+        path: "/myWallet",
       });
     },
   },

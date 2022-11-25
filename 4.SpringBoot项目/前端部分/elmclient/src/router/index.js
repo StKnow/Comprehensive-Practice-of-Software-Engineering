@@ -15,6 +15,10 @@ import MembershipRegister from '../views/MembershipRegister.vue'
 import MyProfile from '../views/MyProfile.vue'
 import Comment from '../views/Comment.vue'
 import WriteComment from '../views/WriteComment.vue'
+import MyWallet from '../views/MyWallet.vue'
+import Recharge from '../views/Recharge.vue'
+import Withdrawal from '../views/Withdrawal.vue'
+import CheckFlow from '../views/CheckFlow.vue'
 
 Vue.use(VueRouter)
 const routes = [{
@@ -81,6 +85,22 @@ const routes = [{
   path: '/writeComment',
   name: 'WriteComment',
   component: WriteComment
+}, {
+  path: '/myWallet',
+  name: 'MyWallet',
+  component: MyWallet
+}, {
+  path: '/recharge',
+  name: 'Recharge',
+  component: Recharge
+}, {
+  path: '/withdrawal',
+  name: 'Withdrawal',
+  component: Withdrawal
+}, {
+  path: '/checkFlow',
+  name: 'CheckFlow',
+  component: CheckFlow
 }
 
 ]
