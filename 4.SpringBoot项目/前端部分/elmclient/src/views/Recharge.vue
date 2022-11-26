@@ -7,12 +7,6 @@
     <!-- 充值部分 -->
     <ul class="form-box">
       <li>
-        <div class="title">出账账号：</div>
-        <div class="content">
-          <input type="text" v-model="outAccount" placeholder="出账账号" />
-        </div>
-      </li>
-      <li>
         <div class="title">金额：</div>
         <div class="content">
           <input type="text" v-model="amount" placeholder="金额" />
@@ -34,6 +28,7 @@ export default {
       outAccount: "",
       amount: "",
       user: {},
+      walletId,
     };
   },
   components: {
@@ -41,6 +36,17 @@ export default {
   },
   created() {
     this.user = this.$getSessionStorage("user");
+    this.$axios
+      .post(
+        "UserController/getWalletIdByUserId",
+        this.$qs.stringify(this.user.userId)
+      )
+      .then((response) => {
+        this.walletId = response.data;
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   },
   methods: {
     recharge() {
@@ -48,9 +54,8 @@ export default {
         .post(
           "WalletController/recharge",
           this.$qs.stringify({
-            outAccount: this.outAccount,
+            walletId: this.walletId,
             amount: this.amount,
-            user: this.user,
           })
         )
         .then((response) => {
