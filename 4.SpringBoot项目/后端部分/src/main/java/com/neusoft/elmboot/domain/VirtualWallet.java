@@ -28,11 +28,14 @@ public class VirtualWallet {
         if (this.balance < amount) {
             throw new InsufficientBalanceException("钱包余额不足");
         }
-        this.balance -= amount;
+        if (amount <= 0) {
+            throw new InvalidAmountException("提现金额错误");
+        }
+            this.balance -= amount;
     }
 
     public void credit(Double amount) {
-        if(amount<0) {
+        if (amount <= 0) {
             throw new InvalidAmountException("存入金额错误");
         }
         this.balance += amount;

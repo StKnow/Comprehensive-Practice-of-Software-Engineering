@@ -27,7 +27,7 @@ public class VirtualWalletServiceImpl implements VirtualWalletService {
         virtualWallet.setBalance(virtualWalletMapper.getBalanceById(walletId));
         try {
             virtualWallet.credit(amount);
-        } catch (InvalidAmountException e) {
+        } catch (Exception e) {
             System.out.println(e.getMessage());
             return 0;
         }
@@ -52,7 +52,7 @@ public class VirtualWalletServiceImpl implements VirtualWalletService {
         virtualWallet.setBalance(virtualWalletMapper.getBalanceById(walletId));
         try {
             virtualWallet.debit(amount);
-        } catch (InsufficientBalanceException e) {
+        } catch (Exception e) {
             System.out.println(e.getMessage());
             return 0;
         }

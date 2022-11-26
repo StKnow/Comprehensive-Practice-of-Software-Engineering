@@ -50,7 +50,6 @@ export default {
   },
   methods: {
     recharge() {
-      alert(this.walletId);
       this.$axios
         .post(
           "WalletController/recharge",
