@@ -2,25 +2,21 @@
   <div class="wrapper">
     <!-- header部分 -->
     <header>
-      <p>我的钱包</p>
+      <p>我的积分</p>
     </header>
     <!-- 钱包部分 -->
     <div>
-      <img src="../assets/钱包.png" alt="钱包" />
-      <div class="balance">余额: {{ balance }}元</div>
+      <img src="../assets/积分.png" alt="钱包" />
+      <div class="balance">积分: {{ point }}</div>
     </div>
     <div class="function">
-      <li @click="toRecharge">
-        <img src="../assets/充值.png" alt="充值" />
-        <p>充值</p>
+      <li @click="toPointsMall">
+        <img src="../assets/积分商城.png" alt="积分商城" />
+        <p>积分商城</p>
       </li>
-      <li @click="toWithdrawal">
-        <img src="../assets/提现.png" alt="提现" />
-        <p>提现</p>
-      </li>
-      <li @click="toCheckFlow">
-        <img src="../assets/查询.png" alt="查询交易流水" />
-        <p>查询交易流水</p>
+      <li @click="toPointFlow">
+        <img src="../assets/查询.png" alt="积分明细" />
+        <p>积分明细</p>
       </li>
     </div>
     <!-- 底部菜单部分 -->
@@ -33,8 +29,7 @@ export default {
   data() {
     return {
       user: {},
-      balance: 0,
-      walletId: "",
+      point: 0,
     };
   },
   components: {
@@ -43,43 +38,23 @@ export default {
   created() {
     this.user = this.$getSessionStorage("user");
     this.$axios
-      .post(
-        "UserController/getWalletIdByUserId",
-        this.$qs.stringify(this.user.userId)
-      )
+      .post("IntegralController/getPointsById", this.$qs.stringify(this.user))
       .then((response) => {
-        this.walletId = response.data;
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-
-    this.$axios
-      .post(
-        "WalletController/getBalanceById",
-        this.$qs.stringify(this.walletId)
-      )
-      .then((response) => {
-        this.balance = response.data;
+        this.point = response.data;
       })
       .catch((error) => {
         console.error(error);
       });
   },
   methods: {
-    toRecharge() {
+    toPointsMall() {
       this.$router.push({
-        path: "/recharge",
+        path: "/pointsMall",
       });
     },
-    toWithdrawal() {
+    toPointFlow() {
       this.$router.push({
-        path: "/withdrawal",
-      });
-    },
-    toCheckFlow() {
-      this.$router.push({
-        path: "/checkFlow",
+        path: "/pointFlow",
       });
     },
   },
@@ -115,6 +90,7 @@ export default {
 }
 .wrapper div .balance {
   margin-left: 40vw;
+  margin-top: 5vw;
 }
 .wrapper .function {
   width: 100%;

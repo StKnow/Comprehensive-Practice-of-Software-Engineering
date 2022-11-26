@@ -19,6 +19,9 @@ import MyWallet from '../views/MyWallet.vue'
 import Recharge from '../views/Recharge.vue'
 import Withdrawal from '../views/Withdrawal.vue'
 import CheckFlow from '../views/CheckFlow.vue'
+import PointsMall from '../views/PointsMall.vue'
+import MyPoint from '../views/MyPoint.vue'
+import PointFlow from '../views/PointFlow.vue'
 
 Vue.use(VueRouter)
 const routes = [{
@@ -101,6 +104,18 @@ const routes = [{
   path: '/checkFlow',
   name: 'CheckFlow',
   component: CheckFlow
+}, {
+  path: '/pointsMall',
+  name: 'PointsMall',
+  component: PointsMall
+}, {
+  path: '/myPoint',
+  name: 'MyPoint',
+  component: MyPoint
+}, {
+  path: '/pointFlow',
+  name: 'PointFlow',
+  component: PointFlow
 }
 
 ]

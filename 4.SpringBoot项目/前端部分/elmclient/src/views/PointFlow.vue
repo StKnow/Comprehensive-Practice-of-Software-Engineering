@@ -2,20 +2,18 @@
   <div class="wrapper">
     <!-- header部分 -->
     <header>
-      <p>交易流水</p>
+      <p>积分明细</p>
     </header>
     <!-- 查询部分 -->
     <div class="shop-detail">
       <div class="tab-comments">
         <div class="shop-comments-wrap">
-          <div v-for="item in transFlowArr" class="item">
+          <div v-for="item in pointFlowArr" class="item">
             <div class="comment">
-              <div class="text">交易流水ID: {{ item.transId }}</div>
-              <div class="text">交易时间: {{ item.transDate }}</div>
-              <div class="text">交易金额: {{ item.amount }}</div>
-              <div class="text">交易类型: {{ item.transType }}</div>
-              <div class="text">入账钱包账号: {{ item.inAccount }}</div>
-              <div class="text">出账钱包账号: {{ item.outAccount }}</div>
+              <div class="text">流水细节: {{ item.flowDetails }}</div>
+              <div class="text">积分变化值: {{ item.intergralChange }}</div>
+              <div class="text">流水时间: {{ item.flowDate }}</div>
+              <div class="text">失效日期: {{ item.expirationDate }}</div>
             </div>
           </div>
         </div>
@@ -30,7 +28,7 @@ import Footer from "../components/Footer.vue";
 export default {
   data() {
     return {
-      transFlowArr: [],
+      pointFlowArr: [],
       user: {},
     };
   },
@@ -41,16 +39,13 @@ export default {
     this.user = this.$getSessionStorage("user");
     this.$axios
       .post(
-        "WalletController/listCheckFlowByUserId",
+        "IntegralController/listPointFlowByUserId",
         this.$qs.stringify({
           userId: this.user.userId,
         })
       )
-      // this.$axios
-      //   .get("js/transFlow.json")
       .then((response) => {
-        // console.log(response.data, "返回的数据");
-        this.transFlowArr = response.data;
+        this.pointFlowArr = response.data;
       })
       .catch((error) => {
         console.error(error);

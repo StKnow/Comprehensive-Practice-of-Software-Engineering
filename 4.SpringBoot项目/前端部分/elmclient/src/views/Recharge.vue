@@ -28,7 +28,7 @@ export default {
       outAccount: "",
       amount: "",
       user: {},
-      walletId,
+      walletId: "",
     };
   },
   components: {

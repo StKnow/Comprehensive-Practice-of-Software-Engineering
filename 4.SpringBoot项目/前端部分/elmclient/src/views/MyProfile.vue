@@ -7,13 +7,10 @@
       </div>
       <div class="usernameandid">
         <p class="username">
-          <!-- {{ user.userName }}{{ user.userSex | sexFilter }} -->
-          周先生 男
+          {{ user.userName }}{{ user.userSex | sexFilter }}
         </p>
-        <!-- <p class="userid">尊贵的{{ grade | gradeNameFilter }}会员</p> -->
-        <p class="userid">尊贵的白银会员</p>
-        <!-- <p class="userid">{{ user.userId }}</p> -->
-        <p class="userid">{{ 123 }}</p>
+        <p class="userid">尊贵的{{ grade | gradeNameFilter }}会员</p>
+        <p class="userid">{{ user.userId }}</p>
       </div>
     </div>
     <div class="littleitem">
@@ -55,6 +52,19 @@
         </div>
       </div>
     </div>
+    <div class="littleitem">
+      <div class="littleitembutton">
+        <aside class="littleitemimg">
+          <img src="../assets/积分商城.png" alt="积分商城" />
+        </aside>
+        <div class="word" @click="toPointsMall">
+          我的积分
+          <span class="right">
+            <img src="../assets/向右.png" alt="向右" />
+          </span>
+        </div>
+      </div>
+    </div>
 
     <!-- 底部菜单部分 -->
     <Footer></Footer>
@@ -68,6 +78,7 @@ export default {
     return {
       user: {},
       grade: 0,
+      bonus: 0,
     };
   },
   created() {
@@ -111,6 +122,11 @@ export default {
     toMyWallet() {
       this.$router.push({
         path: "/myWallet",
+      });
+    },
+    toPointsMall() {
+      this.$router.push({
+        path: "/myPoint",
       });
     },
   },
