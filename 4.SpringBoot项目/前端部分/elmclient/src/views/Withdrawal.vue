@@ -28,7 +28,7 @@ export default {
       inAccount: "",
       amount: "",
       user: {},
-      walletId: "",
+      walletId: 0,
     };
   },
   components: {
@@ -39,7 +39,7 @@ export default {
     this.$axios
       .post(
         "UserController/getWalletIdByUserId",
-        this.$qs.stringify(this.user.userId)
+        this.$qs.stringify(this.user)
       )
       .then((response) => {
         this.walletId = response.data;

@@ -10,12 +10,12 @@
         <div class="shop-comments-wrap">
           <div v-for="item in transFlowArr" class="item">
             <div class="comment">
-              <div class="text">交易流水ID: {{ item.transId }}</div>
-              <div class="text">交易时间: {{ item.transDate }}</div>
-              <div class="text">交易金额: {{ item.amount }}</div>
-              <div class="text">交易类型: {{ item.transType }}</div>
-              <div class="text">入账钱包账号: {{ item.inAccount }}</div>
-              <div class="text">出账钱包账号: {{ item.outAccount }}</div>
+              <div class="text">交易流水ID: {{ item.transactionId }}</div>
+              <div class="text">交易时间: {{ item.transactionDate }}</div>
+              <div class="text">交易金额: {{ item.transactionAmount }}</div>
+              <div class="text">交易类型: {{ item.transactionType }}</div>
+              <div class="text">入账钱包账号: {{ item.toWalletId }}</div>
+              <div class="text">出账钱包账号: {{ item.fromWalletId }}</div>
             </div>
           </div>
         </div>
@@ -46,11 +46,9 @@ export default {
           userId: this.user.userId,
         })
       )
-      // this.$axios
-      //   .get("js/transFlow.json")
       .then((response) => {
-        // console.log(response.data, "返回的数据");
         this.transFlowArr = response.data;
+        console.log(response.data)
       })
       .catch((error) => {
         console.error(error);

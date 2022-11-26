@@ -18,4 +18,13 @@ public interface OrdersMapper {
 
     @Update("update orders set orderState=1 where orderId=#{orderId}")
     public int payOrders(Integer orderId);
+
+    @Select("select userId from orders where orderId=#{orderId}")
+    public String getUserIdByOrderId(Integer orderId);
+
+    @Select("select businessId from orders where orderId=#{orderId}")
+    public Integer getBusinessIdByOrderId(Integer orderId);
+
+    @Select("select orderTotal from orders where orderId=#{orderId}")
+    public Double getOrderTotalByOrderId(Integer orderId);
 }

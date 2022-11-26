@@ -7,7 +7,7 @@
     <!-- 钱包部分 -->
     <div>
       <img src="../assets/钱包.png" alt="钱包" />
-      <div class="balance">余额: {{ balance }}元</div>
+      <div class="balance">余额: {{ this.balance }}元</div>
     </div>
     <div class="function">
       <li @click="toRecharge">
@@ -34,7 +34,7 @@ export default {
     return {
       user: {},
       balance: 0,
-      walletId: "",
+      walletId:this.$route.query.walletId,
     };
   },
   components: {
@@ -42,22 +42,11 @@ export default {
   },
   created() {
     this.user = this.$getSessionStorage("user");
-    this.$axios
-      .post(
-        "UserController/getWalletIdByUserId",
-        this.$qs.stringify(this.user.userId)
-      )
-      .then((response) => {
-        this.walletId = response.data;
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-
+    
     this.$axios
       .post(
         "WalletController/getBalanceById",
-        this.$qs.stringify(this.walletId)
+        this.$qs.stringify({walletId:this.walletId}),
       )
       .then((response) => {
         this.balance = response.data;
@@ -70,16 +59,19 @@ export default {
     toRecharge() {
       this.$router.push({
         path: "/recharge",
+        query: { walletId: this.walletId },
       });
     },
     toWithdrawal() {
       this.$router.push({
         path: "/withdrawal",
+        query: { walletId: this.walletId },
       });
     },
     toCheckFlow() {
       this.$router.push({
         path: "/checkFlow",
+        query: { walletId: this.walletId },
       });
     },
   },

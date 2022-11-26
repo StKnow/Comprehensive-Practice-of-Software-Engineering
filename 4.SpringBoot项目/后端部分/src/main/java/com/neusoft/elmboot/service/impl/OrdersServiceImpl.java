@@ -1,12 +1,11 @@
 package com.neusoft.elmboot.service.impl;
 
-import com.neusoft.elmboot.mapper.CartMapper;
-import com.neusoft.elmboot.mapper.OrderDetailetMapper;
-import com.neusoft.elmboot.mapper.OrdersMapper;
+import com.neusoft.elmboot.mapper.*;
 import com.neusoft.elmboot.po.Cart;
 import com.neusoft.elmboot.po.OrderDetailet;
 import com.neusoft.elmboot.po.Orders;
 import com.neusoft.elmboot.service.OrdersService;
+import com.neusoft.elmboot.service.VirtualWalletService;
 import com.neusoft.elmboot.util.CommonUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,6 +23,12 @@ public class OrdersServiceImpl implements OrdersService {
     private OrdersMapper ordersMapper;
     @Autowired
     private OrderDetailetMapper orderDetailetMapper;
+    @Autowired
+    private UserMapper userMapper;
+    @Autowired
+    private BusinessMapper businessMapper;
+    @Autowired
+    private VirtualWalletService virtualWalletService;
 
     @Override
     @Transactional
@@ -41,7 +46,7 @@ public class OrdersServiceImpl implements OrdersService {
 
         //3、批量添加订单明细
         List<OrderDetailet> list = new ArrayList<>();
-        for(Cart c : cartList) {
+        for (Cart c : cartList) {
             OrderDetailet od = new OrderDetailet();
             od.setOrderId(orderId);
             od.setFoodId(c.getFoodId());
@@ -56,18 +61,27 @@ public class OrdersServiceImpl implements OrdersService {
         return orderId;
 
     }
+
     @Override
     public Orders getOrdersById(Integer orderId) {
         return ordersMapper.getOrdersById(orderId);
     }
 
     @Override
-    public List<Orders> listOrdersByUserId(String userId){
+    public List<Orders> listOrdersByUserId(String userId) {
         return ordersMapper.listOrdersByUserId(userId);
     }
 
     @Override
     public int payOrders(Integer orderId) {
+        String userId = ordersMapper.getUserIdByOrderId(orderId);
+        Integer businessId = ordersMapper.getBusinessIdByOrderId(orderId);
+        Integer fromWalletId = userMapper.getWalletIdByUserId(userId);
+        Integer toWalletId = businessMapper.getWalletIdByBusinessId(businessId);
+        Double orderTotal = ordersMapper.getOrderTotalByOrderId(orderId);
+
+        virtualWalletService.transfer(fromWalletId, toWalletId, orderTotal);
+
         return ordersMapper.payOrders(orderId);
     }
 }

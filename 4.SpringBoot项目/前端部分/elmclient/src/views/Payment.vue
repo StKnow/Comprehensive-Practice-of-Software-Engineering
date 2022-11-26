@@ -33,7 +33,7 @@
     <ul class="payment-type">
       <input type="radio" style="width: 6vw; height: 4.5vw" name="支付方式">钱包余额支付</input>
     </ul>
-    <input type="checkbox" class="usePoint" style="width: 6vw; height: 4.5vw;" v-model="usePoint" value="1">使用积分抵扣金额</input>
+    <!-- <input type="checkbox" class="usePoint" style="width: 6vw; height: 4.5vw;" v-model="usePoint" value="1">使用积分抵扣金额</input> -->
     <div>当前积分可抵扣: 1元</div>
     <div class="payment-button">
       <button @click="payment">确认支付</button>
@@ -56,7 +56,7 @@ export default {
       grade: 0,
       isShowDetailet: false,
       user: {},
-      usePoint: 0,
+      // usePoint: 0,
     };
   },
   created() {
@@ -107,8 +107,7 @@ export default {
       this.isShowDetailet = !this.isShowDetailet;
     },
     payment() {
-      if (usePoint == 0) {
-        this.$axios
+      this.$axios
           .post(
             "OrdersController/payOrders",
             this.$qs.stringify({
@@ -126,26 +125,45 @@ export default {
           .catch((error) => {
             console.error(error);
           });
-      } else {
-        this.$axios
-          .post(
-            "OrdersController/usePointPayOrders",
-            this.$qs.stringify({
-              orderId: this.orderId,
-            })
-          )
-          .then((response) => {
-            if (response.data > 0) {
-              alert("支付订单成功！");
-              this.$router.go(-1);
-            } else {
-              alert("支付订单失败！");
-            }
-          })
-          .catch((error) => {
-            console.error(error);
-          });
-      }
+      // if (usePoint == 0) {
+      //   this.$axios
+      //     .post(
+      //       "OrdersController/payOrders",
+      //       this.$qs.stringify({
+      //         orderId: this.orderId,
+      //       })
+      //     )
+      //     .then((response) => {
+      //       if (response.data > 0) {
+      //         alert("支付订单成功！");
+      //         this.$router.go(-1);
+      //       } else {
+      //         alert("支付订单失败！");
+      //       }
+      //     })
+      //     .catch((error) => {
+      //       console.error(error);
+      //     });
+      // } else {
+      //   this.$axios
+      //     .post(
+      //       "OrdersController/usePointPayOrders",
+      //       this.$qs.stringify({
+      //         orderId: this.orderId,
+      //       })
+      //     )
+      //     .then((response) => {
+      //       if (response.data > 0) {
+      //         alert("支付订单成功！");
+      //         this.$router.go(-1);
+      //       } else {
+      //         alert("支付订单失败！");
+      //       }
+      //     })
+      //     .catch((error) => {
+      //       console.error(error);
+      //     });
+      // }
     },
   },
   components: {

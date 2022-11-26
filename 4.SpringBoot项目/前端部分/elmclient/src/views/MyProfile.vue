@@ -79,6 +79,7 @@ export default {
       user: {},
       grade: 0,
       bonus: 0,
+      walletId: 0,
     };
   },
   created() {
@@ -92,6 +93,18 @@ export default {
       )
       .then((response) => {
         this.grade = response.data;
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+
+      this.$axios
+      .post(
+        "UserController/getWalletIdByUserId",
+        this.$qs.stringify(this.user),
+      )
+      .then((response) => {
+        this.walletId = response.data;
       })
       .catch((error) => {
         console.error(error);
@@ -122,6 +135,7 @@ export default {
     toMyWallet() {
       this.$router.push({
         path: "/myWallet",
+        query: { walletId: this.walletId },
       });
     },
     toPointsMall() {

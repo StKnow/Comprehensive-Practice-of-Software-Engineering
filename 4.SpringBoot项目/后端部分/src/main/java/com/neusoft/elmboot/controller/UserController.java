@@ -9,7 +9,6 @@ import com.neusoft.elmboot.service.UserService;
 @RestController
 @RequestMapping("/UserController")
 public class UserController {
-
     @Autowired
     private UserService userService;
 
@@ -26,5 +25,10 @@ public class UserController {
     @RequestMapping("/saveUser")
     public int saveUser(User user) throws Exception {
         return userService.saveUser(user);
+    }
+
+    @RequestMapping("/getWalletIdByUserId")
+    public Integer getWalletIdByUserId(User user) throws Exception {
+        return userService.getWalletIdByUserId(user.getUserId());
     }
 }

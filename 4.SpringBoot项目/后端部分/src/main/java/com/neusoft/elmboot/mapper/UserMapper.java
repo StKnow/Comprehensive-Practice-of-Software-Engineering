@@ -16,4 +16,6 @@ public interface UserMapper {
     @Insert("insert into user values(#{userId},#{password},#{userName},#{userSex},null,1)")
     public int saveUser(User user);
 
+    @Select("select walletId from virtualwallet where userId=#{userId}")
+    public Integer getWalletIdByUserId(String userId);
 }

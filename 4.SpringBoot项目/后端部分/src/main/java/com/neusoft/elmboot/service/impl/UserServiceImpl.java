@@ -26,4 +26,9 @@ public class UserServiceImpl implements UserService {
         return userMapper.saveUser(user);
     }
 
+    @Override
+    public Integer getWalletIdByUserId(String userId) {
+        return userMapper.getWalletIdByUserId(userId);
+    }
+
 }
