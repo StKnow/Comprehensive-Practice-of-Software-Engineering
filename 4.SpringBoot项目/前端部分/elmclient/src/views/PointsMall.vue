@@ -37,11 +37,11 @@ export default {
       pointNum: 0,
     };
   },
+    created() {
+    this.user = this.$getSessionStorage("user");
+  },
   components: {
     Footer,
-  },
-  created() {
-    this.user = this.$getSessionStorage("user");
   },
   methods: {
     payPoint() {
@@ -59,7 +59,7 @@ export default {
         .post(
           "IntegralController/payPoints",
           this.$qs.stringify({
-            user: this.user,
+            userId: this.user.userId,
             point: this.point,
           })
         )

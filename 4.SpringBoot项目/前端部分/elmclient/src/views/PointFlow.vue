@@ -11,7 +11,7 @@
           <div v-for="item in pointFlowArr" class="item">
             <div class="comment">
               <div class="text">流水细节: {{ item.flowDetails }}</div>
-              <div class="text">积分变化值: {{ item.intergralChange }}</div>
+              <div class="text">积分变化值: {{ item.integralChange }}</div>
               <div class="text">流水时间: {{ item.flowDate }}</div>
               <div class="text">失效日期: {{ item.expirationDate }}</div>
             </div>

@@ -10,12 +10,6 @@ import java.util.List;
 
 @Mapper
 public interface IntegralMapper {
-    @Select("select integralAmount from integral where userId=#{userId}")
-    public Integer getIntegralById(String userId);
-
-    @Update("update integral set integralAmount=#{point_now} where userId=#{userId}")
-    public Integer payPoints(String userId,int point_now);
-
     @Insert("insert into integralFlow values(#{userId},#{integralChange},#{flowDate},#{flowDetails},#{expirationDate})")
     public Integer insertFlow(String userId,int integralChange,String flowDate,String flowDetails,String expirationDate);
 
