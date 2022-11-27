@@ -16,5 +16,5 @@ public interface BusinessMapper {
     public Business getBusinessById(Integer businessId);
 
     @Select("select walletId from virtualwallet where businessId=#{businessId}")
-    public int getWalletIdByBusinessId(Integer businessId);
+    public Integer getWalletIdByBusinessId(Integer businessId);
 }

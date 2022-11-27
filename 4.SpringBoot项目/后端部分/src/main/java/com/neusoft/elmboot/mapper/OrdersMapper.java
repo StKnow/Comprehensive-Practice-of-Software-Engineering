@@ -27,4 +27,7 @@ public interface OrdersMapper {
 
     @Select("select orderTotal from orders where orderId=#{orderId}")
     public Double getOrderTotalByOrderId(Integer orderId);
+
+    @Update("update orders set orderTotal=#{finalBill} where orderId=#{orderId}")
+    public Integer usePointPayOrders(Integer orderId,Double finalBill);
 }

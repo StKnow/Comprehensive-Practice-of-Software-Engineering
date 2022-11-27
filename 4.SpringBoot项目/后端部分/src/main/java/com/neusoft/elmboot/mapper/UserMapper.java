@@ -18,4 +18,7 @@ public interface UserMapper {
 
     @Select("select walletId from virtualwallet where userId=#{userId}")
     public Integer getWalletIdByUserId(String userId);
+
+    @Select("select * from user where userId=#{userId}")
+    public User getUserByUserId(String userId);
 }

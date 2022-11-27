@@ -24,4 +24,6 @@ public class BusinessController {
     public Business getBusinessById(Business business) throws Exception {
         return businessService.getBusinessById(business.getBusinessId());
     }
+
+
 }

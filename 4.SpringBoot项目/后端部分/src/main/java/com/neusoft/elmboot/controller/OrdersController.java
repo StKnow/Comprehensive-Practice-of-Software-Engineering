@@ -35,4 +35,9 @@ public class OrdersController {
         return ordersService.payOrders(orderId);
     }
 
+    @RequestMapping("usePointPayOrders")
+    public Integer usePointPayOrders(Integer orderId) throws Exception{
+        return ordersService.usePointPayOrders(orderId);
+    }
+
 }
