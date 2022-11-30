@@ -11,6 +11,4 @@ public interface IntegralService {
     public Integer payPoints(String userId,int point);
 
     public List<IntegralFlow> listPointFlowByUserId(String userId);
-
-
 }

@@ -18,17 +18,17 @@ public class IntegralController {
     @Autowired
     private IntegralService integralService;
 
-    @RequestMapping("getPointsById")
+    @RequestMapping("/getPointsById")
     public Integer getIntegralById(User user) throws Exception {
         return integralService.getIntegralById(user);
     }
 
-    @RequestMapping("payPoints")
+    @RequestMapping("/payPoints")
     public Integer payPoints(String userId,int point) throws Exception {
         return integralService.payPoints(userId,point);
     }
 
-    @RequestMapping("listPointFlowByUserId")
+    @RequestMapping("/listPointFlowByUserId")
     public List<IntegralFlow> listPointFlowByUserId(String userId) throws Exception{
         return integralService.listPointFlowByUserId(userId);
     }

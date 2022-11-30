@@ -28,13 +28,11 @@ public class VirtualWalletController {
 
     @RequestMapping("/getBalanceById")
     public Double getBalanceById(Integer walletId) {
-        System.out.println(walletId);
         return virtualWalletService.getBalanceById(walletId);
     }
 
     @RequestMapping("listCheckFlowByUserId")
     public List<VirtualWalletTransaction> listCheckFlowByUserId(String userId) {
-        System.out.println("--------------------"+userId);
         return virtualWalletService.listCheckFlowByUserId(userId);
     }
 }
