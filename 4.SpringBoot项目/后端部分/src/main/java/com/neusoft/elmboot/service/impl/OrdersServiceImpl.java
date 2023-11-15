@@ -90,7 +90,6 @@ public class OrdersServiceImpl implements OrdersService {
         String CurrentTime = CommonUtil.getCurrentDate();
         String ExpirationTime = CommonUtil.getMonthLaterDate();
         integralMapper.insertFlow(userId,integralChange,CurrentTime,"订单积分",ExpirationTime);
-
         return ordersMapper.payOrders(orderId);
     }
 
@@ -99,11 +98,11 @@ public class OrdersServiceImpl implements OrdersService {
         Double orderTotal = ordersMapper.getOrderTotalByOrderId(orderId);
         String userId = ordersMapper.getUserIdByOrderId(orderId);
         User user = userMapper.getUserByUserId(userId);
-        Integer points = integralService.getIntegralById(user);
+        Double points = integralService.getIntegralById(user).doubleValue();
         Double finalBill = orderTotal-(points/100);
         String CurrentTime = CommonUtil.getCurrentDate();
-        System.out.println("----------------"+finalBill);
-        integralMapper.insertFlow(userId,-points,CurrentTime,"积分抵扣","");
-        return ordersMapper.usePointPayOrders(orderId,finalBill);
+        integralMapper.insertFlow(userId,-points.intValue(),CurrentTime,"积分抵扣","");
+        ordersMapper.usePointPayOrders(orderId,finalBill);
+        return this.payOrders(orderId);
     }
 }

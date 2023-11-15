@@ -12,6 +12,6 @@ public interface VirtualWalletTransactionMapper {
     @Insert("insert into transaction values(null,#{transactionDate},#{transactionAmount},#{transactionType},#{toWalletId},#{fromWalletId},#{userId})")
     public int saveCheckFlow(VirtualWalletTransaction virtualWalletTransaction);
 
-    @Select("select * from transaction where userId=#{userId} order by transactionDate")
+    @Select("select * from transaction where userId=#{userId} order by transactionDate DESC")
     public List<VirtualWalletTransaction> listCheckFlowByUserId(String userId);
 }

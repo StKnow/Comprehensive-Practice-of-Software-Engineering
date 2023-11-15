@@ -22,29 +22,27 @@ public class IntegralServiceImpl implements IntegralService {
     private UserMapper userMapper;
 
     @Override
-    public Integer getIntegralById(User user){
-        if(user.getUserId()==null){
+    public Integer getIntegralById(User user) {
+        if (user.getUserId() == null) {
             return 0;
-        }
-        else{
-            int points=0;
+        } else {
+            int points = 0;
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             Date currentTime = new Date();
             try {
                 currentTime = sdf.parse(CommonUtil.getCurrentDate());
                 List<IntegralFlow> flowLists = integralMapper.listPointFlowByUserId(user.getUserId());
-                for(IntegralFlow integralflow : flowLists){
+                for (IntegralFlow integralflow : flowLists) {
                     Calendar cal = Calendar.getInstance();
                     Date flowDate = sdf.parse(integralflow.getFlowDate());
                     cal.setTime(flowDate);
-                    cal.add(Calendar.MONTH,1);
+                    cal.add(Calendar.MONTH, 1);
                     Date ExpirationDate = cal.getTime();
-                    if(currentTime.before(ExpirationDate)){
-                        points+=integralflow.getIntegralChange();
+                    if (currentTime.before(ExpirationDate)) {
+                        points += integralflow.getIntegralChange();
                     }
                 }
-            }
-            catch (Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
             }
             return points;
@@ -52,19 +50,18 @@ public class IntegralServiceImpl implements IntegralService {
     }
 
     @Override
-    public Integer payPoints(String userId,int point){
-        if(this.getIntegralById(userMapper.getUserByUserId(userId))<point){
+    public Integer payPoints(String userId, int point) {
+        if (this.getIntegralById(userMapper.getUserByUserId(userId)) < point) {
             return 0;
-        }
-        else{
+        } else {
             String flowDate = CommonUtil.getCurrentDate();
-            integralMapper.insertFlow(userId,-point,flowDate,"商城兑换","");
+            integralMapper.insertFlow(userId, -point, flowDate, "商城兑换", "");
             return 1;
         }
     }
 
     @Override
-    public List<IntegralFlow> listPointFlowByUserId(String userId){
+    public List<IntegralFlow> listPointFlowByUserId(String userId) {
         return integralMapper.listPointFlowByUserId(userId);
     }
 }
